@@ -1,17 +1,152 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Hossein Samadi — Full-Stack Software Engineer focused on backend systems, architecture, AI/ML, LLM systems, security and DevOps."
-    />
-    <meta name="theme-color" content="#070b14" />
-    <title>Hossein Samadi | Software Engineer</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hossein Samadi — Backend Software Engineer</title>
+  <meta name="description" content="Hossein Samadi — Software Engineer focused on backend engineering with Django, PostgreSQL, authentication, authorization, APIs and production systems." />
+  <meta name="author" content="Hossein Samadi" />
+  <meta name="theme-color" content="#f4f4f0" />
+  <meta property="og:title" content="Hossein Samadi — Backend Software Engineer" />
+  <meta property="og:description" content="Backend engineering, Django, PostgreSQL, authentication, authorization and production software systems." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aseknown.github.io/" />
+  <link rel="canonical" href="https://aseknown.github.io/" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav-row">
+      <a class="name-link" href="#top">Hossein Samadi</a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#work" data-i18n="nav.work">Work</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="text-button" id="printButton" type="button" data-i18n="actions.print">Print résumé</button>
+        <button class="lang-button" id="languageButton" type="button" aria-label="Switch language">FA</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="intro wrap">
+      <p class="kicker" data-i18n="hero.role">Software Engineer · Backend</p>
+      <h1 data-i18n="hero.title">I build backend systems that stay understandable as they grow.</h1>
+      <p class="intro-copy" data-i18n="hero.summary">
+        Software Engineer at GreenBank, focused on Django, PostgreSQL, API design, authentication and authorization. I also work across deployment, CI/CD, system architecture and AI-assisted backend development.
+      </p>
+      <div class="intro-links">
+        <a href="mailto:hosseinsamadi22@gmail.com">hosseinsamadi22@gmail.com</a>
+        <a href="https://github.com/aseknown" target="_blank" rel="noreferrer">github.com/aseknown</a>
+        <a href="https://www.linkedin.com/in/hosseinesamadi/" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </section>
+
+    <section class="section wrap" id="experience">
+      <div class="section-title">
+        <p data-i18n="sections.experience.label">Experience</p>
+        <h2 data-i18n="sections.experience.title">Current role</h2>
+      </div>
+
+      <article class="experience-item">
+        <div class="experience-meta">
+          <h3>GreenBank</h3>
+          <p data-i18n="greenbank.role">Software Engineer</p>
+          <p data-i18n="greenbank.date">Jul 2026 — Present</p>
+        </div>
+        <div class="experience-body">
+          <p data-i18n="greenbank.summary">
+            Backend engineering with Django and PostgreSQL, with emphasis on maintainable APIs, data models, access control and production reliability.
+          </p>
+          <ul>
+            <li data-i18n="greenbank.b1">Design and implement backend APIs and domain logic in Django.</li>
+            <li data-i18n="greenbank.b2">Model and optimize PostgreSQL data for operational and reporting workloads.</li>
+            <li data-i18n="greenbank.b3">Implement authentication and layered authorization using roles, permissions, object-level checks and policy rules.</li>
+            <li data-i18n="greenbank.b4">Work on CRM capabilities, reporting/KPI APIs, deployment workflows and backend architecture.</li>
+            <li data-i18n="greenbank.b5">Use AI-assisted engineering workflows for implementation, review, documentation and multi-agent backend experiments.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="experience-item compact">
+        <div class="experience-meta">
+          <h3 data-i18n="previous.title">Earlier software work</h3>
+          <p data-i18n="previous.type">Full-stack / independent projects</p>
+        </div>
+        <div class="experience-body">
+          <p data-i18n="previous.summary">
+            Earlier work covers full-stack applications, API development, computer vision, local LLM tooling, security experiments and deployment work. Public projects remain available on my original GitHub account.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section wrap" id="work">
+      <div class="section-title split-title">
+        <div>
+          <p data-i18n="sections.work.label">Selected work</p>
+          <h2 data-i18n="sections.work.title">Professional and private projects</h2>
+        </div>
+        <p class="section-note" data-i18n="sections.work.note">Some production repositories are private, so the descriptions below focus on responsibilities and architecture.</p>
+      </div>
+      <div class="work-list" id="professionalWork"></div>
+    </section>
+
+    <section class="section wrap" id="authorization">
+      <div class="section-title split-title">
+        <div>
+          <p data-i18n="sections.auth.label">Security</p>
+          <h2 data-i18n="sections.auth.title">Authentication and authorization</h2>
+        </div>
+        <p class="section-note" data-i18n="sections.auth.note">I treat authentication and authorization as separate layers: proving identity first, then evaluating what that identity may do.</p>
+      </div>
+      <div class="auth-grid" id="authGrid"></div>
+    </section>
+
+    <section class="section wrap" id="skills">
+      <div class="section-title">
+        <p data-i18n="sections.skills.label">Skills</p>
+        <h2 data-i18n="sections.skills.title">Working stack</h2>
+      </div>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </section>
+
+    <section class="section wrap" id="public-work">
+      <div class="section-title split-title">
+        <div>
+          <p data-i18n="sections.github.label">Open source</p>
+          <h2 data-i18n="sections.github.title">Public GitHub projects</h2>
+        </div>
+        <p class="section-note" data-i18n="sections.github.note">Projects are loaded from both my original and current GitHub accounts. Static fallbacks are shown if the GitHub API is unavailable.</p>
+      </div>
+      <div class="repo-list" id="repoList"></div>
+      <p class="repo-status" id="repoStatus" aria-live="polite"></p>
+    </section>
+
+    <section class="section contact-section wrap" id="contact">
+      <div class="section-title">
+        <p data-i18n="sections.contact.label">Contact</p>
+        <h2 data-i18n="sections.contact.title">Links</h2>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:hosseinsamadi22@gmail.com"><span>Email</span><strong>hosseinsamadi22@gmail.com</strong></a>
+        <a href="https://www.linkedin.com/in/hosseinesamadi/" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>hosseinesamadi</strong></a>
+        <a href="https://github.com/hosseinsam" target="_blank" rel="noreferrer"><span data-i18n="contact.originalGithub">Original GitHub</span><strong>hosseinsam</strong></a>
+        <a href="https://github.com/aseknown" target="_blank" rel="noreferrer"><span data-i18n="contact.currentGithub">Current GitHub</span><strong>aseknown</strong></a>
+        <a href="https://www.instagram.com/aseknown" target="_blank" rel="noreferrer"><span>Instagram</span><strong>aseknown</strong></a>
+        <a href="https://wa.me/989120721127" target="_blank" rel="noreferrer"><span>WhatsApp</span><strong>+98 912 072 1127</strong></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <span>© <span id="year"></span> Hossein Samadi</span>
+    <span data-i18n="footer.line">Backend software engineering · Django · PostgreSQL</span>
+  </footer>
+
+  <script src="./app.js" defer></script>
+</body>
 </html>

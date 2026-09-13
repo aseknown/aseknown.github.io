@@ -1,62 +1,18 @@
 # aseknown.github.io
 
-Personal single-page portfolio for **Hossein Samadi / @aseknown**.
+Minimal bilingual portfolio and résumé for Hossein Samadi.
 
-## Stack
+## Structure
 
-- React
-- TypeScript
-- Vite
-- GitHub Pages
-- GitHub Actions
-- Public GitHub REST API for live profile/repository data
-
-## Local development
-
-```bash
-npm install
-npm run dev
-```
-
-## Production build
-
-```bash
-npm run build
-npm run preview
-```
+- `index.html` — page markup and résumé content
+- `styles.css` — minimal responsive layout and print styles
+- `app.js` — English/Persian switching and public GitHub repository loading
+- `.github/workflows/deploy.yml` — dependency-free GitHub Pages deployment
 
 ## Deploy
 
-1. Create the GitHub repository:
+1. Replace the site files in `aseknown/aseknown.github.io` with these files.
+2. Keep GitHub Pages source set to **GitHub Actions**.
+3. Push to `main`.
 
-   `aseknown/aseknown.github.io`
-
-2. Push this project to the `main` branch.
-
-3. Open:
-
-   `Settings → Pages → Build and deployment → Source`
-
-4. Select:
-
-   `GitHub Actions`
-
-5. Push to `main`. The included workflow builds and deploys automatically.
-
-The site will be available at:
-
-`https://aseknown.github.io/`
-
-## Notes
-
-This is a user GitHub Pages site, so `vite.config.ts` uses:
-
-```ts
-base: "/"
-```
-
-The site intentionally uses section anchors rather than client-side route URLs,
-which avoids GitHub Pages SPA deep-link 404 issues while preserving SPA behavior.
-
-GitHub profile and repository cards are loaded from the public GitHub REST API.
-Fallback content remains visible if the API is temporarily unavailable or rate-limited.
+This version is plain HTML/CSS/JavaScript. It does not use Node, npm, React or Vite, so there is no lockfile or build step to maintain.
