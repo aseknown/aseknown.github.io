@@ -1,18 +1,24 @@
 # aseknown.github.io
 
-Minimal bilingual portfolio and résumé for Hossein Samadi.
+Minimal bilingual portfolio for Hossein Samadi.
 
-## Structure
+## Included
 
-- `index.html` — page markup and résumé content
-- `styles.css` — minimal responsive layout and print styles
-- `app.js` — English/Persian switching and public GitHub repository loading
-- `.github/workflows/deploy.yml` — dependency-free GitHub Pages deployment
+- English / Persian language switch with RTL support
+- Current GreenBank backend role
+- NOBKA experience and project history
+- University portfolio
+- Freelance portfolio with live-preview links
+- Backend authentication and authorization patterns
+- Current/private work: CRM, authentication/authorization, Kiosk Builder, Successo and CRM orchestration
+- Public repositories loaded from both `hosseinsam` and `aseknown`
+- Print-friendly résumé layout
+- Dependency-free GitHub Pages deployment
 
 ## Deploy
 
-1. Replace the site files in `aseknown/aseknown.github.io` with these files.
-2. Keep GitHub Pages source set to **GitHub Actions**.
-3. Push to `main`.
+1. Replace the files in `aseknown/aseknown.github.io` with the contents of this folder.
+2. In GitHub, set **Settings → Pages → Source** to **GitHub Actions**.
+3. Commit and push to `main`.
 
-This version is plain HTML/CSS/JavaScript. It does not use Node, npm, React or Vite, so there is no lockfile or build step to maintain.
+No Node, npm, package lock or build step is required.
