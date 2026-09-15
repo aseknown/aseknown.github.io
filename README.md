@@ -32,8 +32,15 @@ The published site uses `index.html`, `styles.css`, `app.js` and `showcases.js`;
 the React files in `src/` are not the deployed entry point.
 
 Set `showcaseLinks.greenbank` in `showcases.js` to the public HTTPS URL when
-Greenbank is published. Until then, the card shows a publication-pending status.
-Showcase graphics are product illustrations, not screenshots of the live apps.
+Greenbank is published. The link then appears within its professional experience
+entry. Greenbank has no separate showcase card or generated illustration.
+All nine original client and employer website previews are restored in
+`assets/previews/`. Cards link to the websites, load screenshots lazily and
+retry the original public image URL if a local image fails to load.
+`assets/project-marks.svg` provides custom project icons; these are visual
+identifiers, not official third-party logos. Personal apps have
+local SVG illustrations in `assets/illustrations/`, labelled as illustrations
+to distinguish them from real website screenshots.
 
 Employment dates use June 2026 for the transition based on the September 2026
 update that it happened three months earlier. The existing 2021 NOBKA start and

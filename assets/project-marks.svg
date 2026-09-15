@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <symbol id="store" viewBox="0 0 24 24"><path d="M3 10h18l-2-6H5l-2 6Zm2 0v10h14V10M9 20v-6h6v6M3 10c0 3 4 3 4 0 0 3 5 3 5 0 0 3 5 3 5 0 0 3 4 3 4 0"/></symbol>
+  <symbol id="health" viewBox="0 0 24 24"><path d="M12 20 4 12C-2 5 8 0 12 7c4-7 14-2 8 5l-8 8Z"/><path d="M8 12h8m-4-4v8"/></symbol>
+  <symbol id="auto" viewBox="0 0 24 24"><path d="m4 10 2-6h12l2 6M3 10h18v8H3zM5 18v3m14-3v3M6 14h2m8 0h2"/></symbol>
+  <symbol id="audio" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="15" r="4"/><circle cx="12" cy="6" r="1"/></symbol>
+  <symbol id="beauty" viewBox="0 0 24 24"><path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7ZM20 2v4m-2-2h4"/></symbol>
+  <symbol id="pet" viewBox="0 0 24 24"><ellipse cx="5" cy="9" rx="2" ry="3"/><ellipse cx="10" cy="5" rx="2" ry="3"/><ellipse cx="16" cy="5" rx="2" ry="3"/><ellipse cx="21" cy="9" rx="2" ry="3"/><path d="M6 19c-3-4 3-6 4-9h5c1 3 7 5 4 9-2 2-4 0-6 0s-5 2-7 0Z"/></symbol>
+  <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="home" viewBox="0 0 24 24"><path d="m2 11 10-9 10 9M5 9v12h14V9M9 21v-7h6v7"/></symbol>
+  <symbol id="leaf" viewBox="0 0 24 24"><path d="M4 19C-1 6 12 3 21 3c0 9-3 22-16 17M3 22 17 8M9 16v-5m0 5h5"/></symbol>
+  <symbol id="terminal" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="18" rx="3"/><path d="m6 9 4 3-4 3m7 0h5"/></symbol>
+  <symbol id="shield" viewBox="0 0 24 24"><path d="m12 2 9 4v6c0 6-9 10-9 10S3 18 3 12V6l9-4Z"/><path d="m8 12 3 3 5-6"/></symbol>
+  <symbol id="plane" viewBox="0 0 24 24"><path d="m2 10 20-8-6 20-5-8-9-4Zm9 4L22 2M11 14l-1 6 4-3"/></symbol>
+  <symbol id="layers" viewBox="0 0 24 24"><path d="m12 2 10 6-10 6L2 8l10-6ZM2 12l10 6 10-6M2 16l10 6 10-6"/></symbol>
+</svg>

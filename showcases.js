@@ -10,27 +10,63 @@ function publicLink(url) {
   catch { return null; }
 }
 
+// Custom visual marks, rather than third-party brand logos.
+function projectIdentity(url) {
+  const identities = {
+    'drmostafavidiet.ir': ['health', 'health'], 'autozafar.ir': ['auto', 'auto'],
+    'k1system.ir': ['audio', 'audio'], 'sallivanstore.ir': ['store', 'store'],
+    'shinemakeup.ir': ['beauty', 'beauty'], 'bamipet.com': ['pet', 'pet'],
+    'pawgato.com': ['pet', 'pawgato'], 'titime.ir': ['clock', 'clock'],
+    'smart.nobka.ir': ['home', 'home'],
+  };
+  const host = new URL(url).hostname;
+  if (identities[host]) return identities[host];
+  if (url.includes('/greenProof')) return ['leaf', 'greenproof'];
+  if (url.includes('/ollama-gui')) return ['terminal', 'ollama'];
+  if (url.includes('/pqc-jwt-starter')) return ['shield', 'pqc'];
+  return ['layers', 'greenproof'];
+}
+
+function projectMark(icon) {
+  return `<span class="project-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><use href="./assets/project-marks.svg#${icon}" /></svg></span>`;
+}
+
+function projectPreview(item, illustration, en) {
+  const label = item.image ? (en ? 'Website screenshot' : 'تصویر وب‌سایت') : (en ? 'Project illustration' : 'تصویر مفهومی پروژه');
+  return `<a class="project-preview" href="${escapeAttr(item.url)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeAttr((en ? 'Explore ' : 'مشاهده ') + item.title)}">
+    <div class="preview-toolbar" aria-hidden="true"><span class="browser-dots">● ● ●</span><span>${escapeHtml(new URL(item.url).hostname)}</span><span>↗</span></div>
+    <div class="preview-image"><img src="${escapeAttr(item.image || './assets/illustrations/'+illustration+'.svg')}" alt="${escapeAttr(item.title+' — '+label)}" loading="lazy" decoding="async" width="960" height="540" ${item.image ? `data-original-preview="${escapeAttr('https://hosseinsam.github.io/assets/'+item.image.split('/').pop())}"` : ''}/><span class="preview-fallback" hidden>${escapeHtml(item.title)}</span></div><span class="preview-caption">${escapeHtml(label)}</span>
+  </a>`;
+}
+
 function renderShowcases() {
   const en = language === 'en';
-  const greenbank = publicLink(showcaseLinks.greenbank);
+
   const link = (url, label) => `<a class="showcase-link" href="${escapeAttr(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)} <span aria-hidden="true">↗</span></a>`;
   document.getElementById('showcaseGrid').innerHTML = `
     <article class="showcase-card">
-      <div class="showcase-visual telegram-visual" aria-hidden="true"><span class="product-symbol">↗</span><span>TELEGRAM / MINI APP</span><strong>Discover.<br>Shop. Order.</strong><small>Cloudflare Pages · API · D1</small></div>
-      <div class="showcase-body"><p class="kicker">${en ? 'Personal project · Explore now' : 'پروژه شخصی · قابل مشاهده'}</p><h3>${en ? 'Telegram Order Shop' : 'فروشگاه سفارش تلگرام'}</h3><p>${en ? 'A Telegram Mini App for browsing shops and products, with an API and D1-backed order workflow on Cloudflare Pages.' : 'مینی‌اپ تلگرام برای مرور فروشگاه‌ها و محصولات، همراه با API و گردش‌کار سفارش مبتنی بر D1 روی Cloudflare Pages.'}</p><div class="showcase-actions">${link(showcaseLinks.telegram,en ? 'Open in Telegram' : 'باز کردن در تلگرام')}${link(showcaseLinks.web,en ? 'Explore web app' : 'مشاهده نسخه وب')}</div></div>
+      ${projectPreview({title:'Telegram Order Shop',url:showcaseLinks.web},'telegram',en)}
+      <div class="showcase-body"><p class="kicker">${en ? 'Personal project · Explore now' : 'پروژه شخصی · قابل مشاهده'}</p><h3 class="project-title">${projectMark('plane')}${en ? 'Telegram Order Shop' : 'فروشگاه سفارش تلگرام'}</h3><p>${en ? 'A Telegram Mini App for browsing shops and products, with an API and D1-backed order workflow on Cloudflare Pages.' : 'مینی‌اپ تلگرام برای مرور فروشگاه‌ها و محصولات، همراه با API و گردش‌کار سفارش مبتنی بر D1 روی Cloudflare Pages.'}</p><div class="showcase-actions">${link(showcaseLinks.telegram,en ? 'Open in Telegram' : 'باز کردن در تلگرام')}${link(showcaseLinks.web,en ? 'Explore web app' : 'مشاهده نسخه وب')}</div></div>
     </article>`;
-  document.getElementById('professionalShowcase').innerHTML = `
-    <article class="showcase-card">
-      <div class="showcase-visual crm-visual" aria-hidden="true"><span class="product-symbol">{ }</span><span>GREENBANK / ENGINEERING</span><strong>One platform.<br>Isolated tenants.</strong><small>Python · Django · REST APIs</small></div>
-      <div class="showcase-body"><p class="kicker">${en ? 'Professional work · Modular CRM' : 'پروژه حرفه‌ای · CRM ماژولار'}</p><h3>Greenbank</h3><p>${en ? 'CRM backend for customer service, workforce management and business reporting. Tenant isolation, SSO, policy-based permissions, private attachments and SLA reporting form the core engineering scope.' : 'بک‌اند CRM برای خدمات مشتری، مدیریت نیروی کار و گزارش کسب‌وکار؛ با جداسازی tenant، SSO، مجوزدهی مبتنی بر policy، پیوست خصوصی و گزارش SLA.'}</p><div class="showcase-actions">${greenbank ? link(greenbank,en ? 'Explore Greenbank' : 'مشاهده Greenbank') : `<span class="publication-status">${en ? 'Public link pending publication' : 'لینک عمومی پس از انتشار'}</span>`}<a class="showcase-link" href="#experience">${en ? 'View engineering experience' : 'مشاهده تجربه مهندسی'} ↓</a></div></div>
-    </article>`;
-
   const projectCard = (item, category) => `
-    <article class="showcase-card"><div class="showcase-body"><p class="kicker">${escapeHtml(category)}</p><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.body)}</p>${item.tags ? '<div class="work-tags">'+item.tags.map(tag => '<span class="tag">'+escapeHtml(tag)+'</span>').join('')+'</div>' : ''}<div class="showcase-actions">${link(item.url, en ? (category === 'Personal project' ? 'View project code' : 'Visit website') : 'مشاهده پروژه')}${item.code ? link(item.code,en ? 'View frontend code' : 'مشاهده کد فرانت‌اند') : ''}</div></div></article>`;
+    <article class="showcase-card" data-project-theme="${projectIdentity(item.url)[1]}">${projectPreview(item,projectIdentity(item.url)[1],en)}<div class="showcase-body"><p class="kicker">${escapeHtml(category)}</p><h3 class="project-title">${projectMark(projectIdentity(item.url)[0])}${escapeHtml(item.title)}</h3><p>${escapeHtml(item.body)}</p>${item.tags ? '<div class="work-tags">'+item.tags.map(tag => '<span class="tag">'+escapeHtml(tag)+'</span>').join('')+'</div>' : ''}<div class="showcase-actions">${link(item.url, en ? (category === 'Personal project' ? 'View project code' : 'Visit website') : 'مشاهده پروژه')}${item.code ? link(item.code,en ? 'View frontend code' : 'مشاهده کد فرانت‌اند') : ''}</div></div></article>`;
   const c = content[language];
   document.getElementById('freelanceProjects').innerHTML = c.freelance.map(item => projectCard(item,en ? 'Freelance · Client project' : 'فریلنس · پروژه مشتری')).join('');
   document.getElementById('showcaseGrid').innerHTML += c.personal.map(item => projectCard(item,en ? 'Personal project' : 'پروژه شخصی')).join('');
   document.getElementById('employerProducts').innerHTML = c.employerProducts.map(item => projectCard(item,en ? 'NOBKA · Employer product' : 'NOBKA · محصول سازمانی')).join('');
+
+  document.querySelectorAll('.project-preview img').forEach(image => {
+    image.addEventListener('error', () => {
+      if (image.dataset.originalPreview) {
+        const original = image.dataset.originalPreview;
+        delete image.dataset.originalPreview;
+        image.src = original;
+      } else {
+        image.hidden = true;
+        image.nextElementSibling.hidden = false;
+      }
+    });
+  });
 
 }
 

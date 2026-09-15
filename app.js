@@ -308,49 +308,49 @@ const content = {
       {
         "title": "Online diet website",
         "url": "https://drmostafavidiet.ir/",
-        "image": "https://hosseinsam.github.io/assets/dr-937a478e.png",
+        "image": "./assets/previews/dr-937a478e.png",
         "body": "Client website project from my freelance portfolio.",
         "code": null
       },
       {
         "title": "Auto parts store",
         "url": "https://autozafar.ir/",
-        "image": "https://hosseinsam.github.io/assets/auto-ca490d1a.png",
+        "image": "./assets/previews/auto-ca490d1a.png",
         "body": "Client website project from my freelance portfolio.",
         "code": null
       },
       {
         "title": "Car audio system store",
         "url": "https://k1system.ir/",
-        "image": "https://hosseinsam.github.io/assets/k1-f0aee7dd.png",
+        "image": "./assets/previews/k1-f0aee7dd.png",
         "body": "Client website project from my freelance portfolio.",
         "code": null
       },
       {
         "title": "Sallivan Store",
         "url": "https://sallivanstore.ir/",
-        "image": "https://hosseinsam.github.io/assets/sali-8b198acb.png",
+        "image": "./assets/previews/sali-8b198acb.png",
         "body": "Client website project from my freelance portfolio.",
         "code": null
       },
       {
         "title": "ShineMakeup Store",
         "url": "https://shinemakeup.ir/",
-        "image": "https://hosseinsam.github.io/assets/shine-74e4265e.png",
+        "image": "./assets/previews/shine-74e4265e.png",
         "body": "Client website project from my freelance portfolio.",
         "code": null
       },
       {
         "title": "BamiPet Store",
         "url": "https://bamipet.com/",
-        "image": "https://hosseinsam.github.io/assets/bami-37bf4a2e.png",
+        "image": "./assets/previews/bami-37bf4a2e.png",
         "body": "Client website project from my freelance portfolio.",
         "code": null
       },
       {
         "title": "Pawgato",
         "url": "https://pawgato.com/",
-        "image": "https://hosseinsam.github.io/assets/paw-218cc36a.png",
+        "image": "./assets/previews/paw-218cc36a.png",
         "body": "Client frontend project with dark-mode support.",
         "code": "https://github.com/hosseinsam/pawgatoFrontWithDarkmode"
       }
@@ -391,11 +391,13 @@ const content = {
     "employerProducts": [
       {
         "title": "Titime",
+        "image": "./assets/previews/titime-4b78d651.png",
         "url": "https://titime.ir/",
         "body": "Attendance product from my NOBKA portfolio."
       },
       {
         "title": "NOBKA Smart Home",
+        "image": "./assets/previews/smart-e1dbe507.png",
         "url": "https://smart.nobka.ir/",
         "body": "Smart-home and IoT product website from my NOBKA portfolio."
       }
@@ -710,49 +712,49 @@ const content = {
       {
         "title": "وب‌سایت رژیم آنلاین",
         "url": "https://drmostafavidiet.ir/",
-        "image": "https://hosseinsam.github.io/assets/dr-937a478e.png",
+        "image": "./assets/previews/dr-937a478e.png",
         "body": "پروژه وب‌سایت مشتری از مجموعه کارهای فریلنس من.",
         "code": null
       },
       {
         "title": "فروشگاه لوازم خودرو",
         "url": "https://autozafar.ir/",
-        "image": "https://hosseinsam.github.io/assets/auto-ca490d1a.png",
+        "image": "./assets/previews/auto-ca490d1a.png",
         "body": "پروژه وب‌سایت مشتری از مجموعه کارهای فریلنس من.",
         "code": null
       },
       {
         "title": "فروشگاه سیستم صوتی خودرو",
         "url": "https://k1system.ir/",
-        "image": "https://hosseinsam.github.io/assets/k1-f0aee7dd.png",
+        "image": "./assets/previews/k1-f0aee7dd.png",
         "body": "پروژه وب‌سایت مشتری از مجموعه کارهای فریلنس من.",
         "code": null
       },
       {
         "title": "فروشگاه Sallivan",
         "url": "https://sallivanstore.ir/",
-        "image": "https://hosseinsam.github.io/assets/sali-8b198acb.png",
+        "image": "./assets/previews/sali-8b198acb.png",
         "body": "پروژه وب‌سایت مشتری از مجموعه کارهای فریلنس من.",
         "code": null
       },
       {
         "title": "فروشگاه ShineMakeup",
         "url": "https://shinemakeup.ir/",
-        "image": "https://hosseinsam.github.io/assets/shine-74e4265e.png",
+        "image": "./assets/previews/shine-74e4265e.png",
         "body": "پروژه وب‌سایت مشتری از مجموعه کارهای فریلنس من.",
         "code": null
       },
       {
         "title": "فروشگاه BamiPet",
         "url": "https://bamipet.com/",
-        "image": "https://hosseinsam.github.io/assets/bami-37bf4a2e.png",
+        "image": "./assets/previews/bami-37bf4a2e.png",
         "body": "پروژه وب‌سایت مشتری از مجموعه کارهای فریلنس من.",
         "code": null
       },
       {
         "title": "Pawgato",
         "url": "https://pawgato.com/",
-        "image": "https://hosseinsam.github.io/assets/paw-218cc36a.png",
+        "image": "./assets/previews/paw-218cc36a.png",
         "body": "پروژه فرانت‌اند مشتری با پشتیبانی از حالت تاریک.",
         "code": "https://github.com/hosseinsam/pawgatoFrontWithDarkmode"
       }
@@ -793,11 +795,13 @@ const content = {
     "employerProducts": [
       {
         "title": "Titime",
+        "image": "./assets/previews/titime-4b78d651.png",
         "url": "https://titime.ir/",
         "body": "محصول حضور و غیاب از مجموعه کارهای من در NOBKA."
       },
       {
         "title": "NOBKA Smart Home",
+        "image": "./assets/previews/smart-e1dbe507.png",
         "url": "https://smart.nobka.ir/",
         "body": "وب‌سایت محصولات خانه هوشمند و IoT از مجموعه کارهای من در NOBKA."
       }
@@ -963,9 +967,10 @@ function renderExperience() {
     return `
       <article class="experience-item">
         <div class="experience-meta">
-          <h3>${escapeHtml(item.company)}</h3>
+          <h3 class="project-title">${projectMark(item.company === 'Greenbank' ? 'layers' : 'terminal')}${escapeHtml(item.company)}</h3>
           <p>${escapeHtml(item.role)}</p>
           <p>${escapeHtml(item.date)}</p>
+          ${item.company === 'Greenbank' && publicLink(showcaseLinks.greenbank) ? `<p><a class="showcase-link" href="${escapeAttr(showcaseLinks.greenbank)}" target="_blank" rel="noopener noreferrer">${language === 'en' ? 'Visit Greenbank ↗' : 'مشاهده Greenbank ↗'}</a></p>` : ''}
         </div>
         <div class="experience-body">
           <p>${escapeHtml(item.summary)}</p>
@@ -980,7 +985,7 @@ function renderExperience() {
 function renderProfessionalProjects() {
   document.getElementById("professionalProjects").innerHTML = content[language].projects.map((item) => `
     <article class="work-row">
-      <h3>${escapeHtml(item.title)}</h3>
+      <h3 class="project-title">${projectMark(item.title.includes('Authorization') || item.title.includes('مجوز') ? 'shield' : 'layers')}${escapeHtml(item.title)}</h3>
       <p>${escapeHtml(item.body)}</p>
       <div class="work-tags">${item.tags.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}</div>
     </article>
