@@ -1,60 +1,119 @@
 const content = {
-  en: {
-    nav: { about: "About", experience: "Experience", projects: "Projects", freelance: "Freelance", skills: "Skills", contact: "Contact" },
-    actions: { print: "Print résumé", live: "Live preview" },
-    hero: {
-      role: "Software Engineer",
-      title: "Full-stack background. Backend focus today.",
-      summary: "I work as a software engineer across the stack. My current role at GreenBank is backend-focused, building Django and PostgreSQL systems, APIs, authentication and authorization. My earlier work spans frontend, desktop software, IoT, AR, e-commerce and full-stack products."
+  "en": {
+    "nav": {
+      "about": "About",
+      "experience": "Professional experience",
+      "skills": "Skills",
+      "contact": "Contact",
+      "showcases": "Showcases",
+      "freelance": "Freelance projects",
+      "personal": "Personal projects"
     },
-    sections: {
-      about: { label: "Profile", title: "Software engineer, not a single-stack title.", note: "I can work on frontend or backend when the product needs it. For the last two months my day-to-day work has been backend engineering, with Django and PostgreSQL as the core stack." },
-      experience: { label: "Experience", title: "Professional work" },
-      projects: { label: "Selected work", title: "Current and private projects", note: "Production repositories are not all public, so these entries describe the engineering scope rather than exposing private implementation details." },
-      university: { label: "2017–2022", title: "University portfolio", note: "Projects completed during university, covering mobile development, computer vision, machine learning and full-stack web systems." },
-      freelance: { label: "Freelance", title: "Web projects", note: "Projects from the original portfolio, preserved here with their public preview links." },
-      auth: { label: "Backend security", title: "Authentication and authorization", note: "I keep identity verification separate from access decisions, then apply the authorization model that best fits the domain." },
-      skills: { label: "Skills", title: "Working stack" },
-      github: { label: "Public work", title: "GitHub repositories", note: "This section loads public repositories from both GitHub accounts. If GitHub is unavailable, a verified fallback list is shown." },
-      contact: { label: "Contact", title: "Links" }
+    "actions": {
+      "print": "Print CV · 1 page",
+      "live": "Live preview"
     },
-    profile: [
-      { title: "Current focus", body: "Backend engineering at GreenBank: Django, Django REST Framework, PostgreSQL, API design, data modeling, authentication, authorization and production delivery." },
-      { title: "Engineering range", body: "Full-stack software engineering background across React/TypeScript, backend APIs, desktop C#, serial communication, MQTT/IoT, AR, WordPress, SEO and product UI/UX." },
-      { title: "Education", body: "Zanjan University, 2017–2022. University work included mobile commerce, computer vision, LSTM forecasting and a MERN auction marketplace." }
-    ],
-    experience: [
+    "hero": {
+      "role": "Software Engineer — Backend (Python/Django)",
+      "title": "Backend systems. Built around real operations.",
+      "summary": "I build modular backend systems at Greenbank for customer service, workforce management and business reporting. My work brings together Python/Django APIs, multi-tenant architecture, SSO and policy-based authorisation, backed by automated tests. Earlier experience spans React/TypeScript interfaces, C# desktop applications and device integration."
+    },
+    "sections": {
+      "about": {
+        "label": "Profile",
+        "title": "Secure boundaries. Maintainable systems.",
+        "note": "I connect API design, data isolation and access control to the operational needs of the product, with explicit transactions and tests for failure paths."
+      },
+      "experience": {
+        "label": "Experience",
+        "title": "Professional experience"
+      },
+      "projects": {
+        "label": "Workplace projects",
+        "title": "Engineering at work",
+        "note": "Production repositories are not all public, so these entries describe the engineering scope rather than exposing private implementation details."
+      },
+      "university": {
+        "label": "2017–2022",
+        "title": "University portfolio",
+        "note": "Projects completed during university, covering mobile development, computer vision, machine learning and full-stack web systems."
+      },
+      "auth": {
+        "label": "Backend security",
+        "title": "Authentication and authorization",
+        "note": "I keep identity verification separate from access decisions, then apply the authorization model that best fits the domain."
+      },
+      "skills": {
+        "label": "Skills",
+        "title": "Working stack"
+      },
+      "github": {
+        "label": "Public work",
+        "title": "GitHub repositories",
+        "note": "This section loads public repositories from both GitHub accounts. If GitHub is unavailable, a verified fallback list is shown."
+      },
+      "contact": {
+        "label": "Contact",
+        "title": "Links"
+      },
+      "showcases": {
+        "label": "Personal projects",
+        "title": "Independent apps I build.",
+        "note": "Apps built independently from my employment and freelance client work."
+      },
+      "freelance": {
+        "label": "Client work",
+        "title": "Freelance projects",
+        "note": "Client websites and frontend projects from my freelance portfolio. Employer-owned products appear under professional experience."
+      }
+    },
+    "profile": [
       {
-        company: "GreenBank",
-        role: "Software Engineer — Backend focus",
-        date: "Jul 2026 — Present",
-        summary: "Current role focused on backend engineering for business systems and CRM-related services using Django and PostgreSQL.",
-        bullets: [
-          "Design and implement backend APIs and domain logic with Django and Django REST Framework.",
-          "Model PostgreSQL data and work on query, reporting and KPI-oriented workloads.",
-          "Implement authentication and authorization with clear separation between identity and access-control decisions.",
-          "Apply RBAC, policy/attribute checks and object-level permission rules where the domain requires them.",
-          "Work across CRM features, backend architecture, CI/CD, deployment and technical documentation."
+        "title": "Current focus",
+        "body": "I build modular backend systems at Greenbank for customer service, workforce management and business reporting. My work brings together Python/Django APIs, multi-tenant architecture, SSO and policy-based authorisation, backed by automated tests. Earlier experience spans React/TypeScript interfaces, C# desktop applications and device integration."
+      },
+      {
+        "title": "Engineering range",
+        "body": "React, TypeScript and API integration; C# desktop applications, encrypted serial communication, MQTT and IoT workflows."
+      },
+      {
+        "title": "Education",
+        "body": "Zanjan University, 2017–2022. University work included mobile commerce, computer vision, LSTM forecasting and a MERN auction marketplace."
+      }
+    ],
+    "experience": [
+      {
+        "company": "Greenbank",
+        "role": "Software Engineer — Backend (Python/Django)",
+        "date": "Jun 2026 — Present",
+        "summary": "Developed a modular CRM backend supporting customer service operations, workforce management and business reporting.",
+        "bullets": [
+          "Built REST APIs with Python, Django and Django REST Framework, following CQRS patterns and explicit transaction boundaries.",
+          "Implemented tenant isolation, onboarding and membership management to protect organisation-specific data.",
+          "Integrated SSO and centralised role- and policy-based authorisation across APIs and command handlers.",
+          "Developed private attachment uploads and authenticated downloads with file validation and resource-level permissions.",
+          "Delivered support metrics, SLA reporting and activity exports; optimised export processing for large date ranges.",
+          "Extended plugin-based workflows and added automated coverage for permissions, tenant isolation and failure scenarios."
         ]
       },
       {
-        company: "NOBKA",
-        role: "Software Engineer",
-        date: "2021 — Jul 2026",
-        summary: "Worked across frontend, desktop, IoT, AR, e-commerce and product engineering projects inside a holding company building different electronic and software products.",
-        projects: [
+        "company": "NOBKA",
+        "role": "Software Engineer",
+        "date": "2021 — Jun 2026",
+        "summary": "Developed web interfaces, desktop software and device integrations for electronic and software products.",
+        "projects": [
           {
-            title: "VOIP System",
-            summary: "Admin interface for configuring a VoIP system.",
-            bullets: [
+            "title": "VOIP System",
+            "summary": "Admin interface for configuring a VoIP system.",
+            "bullets": [
               "Designed the admin-panel UI.",
               "Implemented the admin dashboard with HTML, CSS and JavaScript."
             ]
           },
           {
-            title: "LTE Modem",
-            summary: "Responsive administration dashboard for a modem product with a large configuration surface.",
-            bullets: [
+            "title": "LTE Modem",
+            "summary": "Responsive administration dashboard for a modem product with a large configuration surface.",
+            "bullets": [
               "Implemented the responsive admin dashboard with React, Redux and Axios.",
               "Built reusable components such as radio controls, multiselects, inputs, menu buttons and loading states.",
               "Handled complex forms with redux-form and React hooks.",
@@ -65,27 +124,27 @@ const content = {
             ]
           },
           {
-            title: "Messenger Chrome Extension",
-            summary: "Browser messenger application with end-to-end encryption requirements.",
-            bullets: [
+            "title": "Messenger Chrome Extension",
+            "summary": "Browser messenger application with end-to-end encryption requirements.",
+            "bullets": [
               "Designed the UI and UX for the messenger application.",
               "Implemented the frontend with TypeScript, React and Chrome Extension Manifest V3.",
               "Worked on SDK flows that validate user key changes and related actions through backend APIs."
             ]
           },
           {
-            title: "AR Research",
-            summary: "Research and prototypes for product marketing and augmented-reality experiences.",
-            bullets: [
+            "title": "AR Research",
+            "summary": "Research and prototypes for product marketing and augmented-reality experiences.",
+            "bullets": [
               "Prototyped browser-based AR marketing using AR.js to show controllable video on detected targets.",
               "Used Vuforia and Unity to implement a multi-target Android AR prototype.",
               "Prepared product objects in GLB format for AR usage."
             ]
           },
           {
-            title: "FileManager",
-            summary: "Desktop file manager communicating with an encrypted device over serial port.",
-            bullets: [
+            "title": "FileManager",
+            "summary": "Desktop file manager communicating with an encrypted device over serial port.",
+            "bullets": [
               "Built the application in C# around encrypted serial-port communication.",
               "Contributed to command design for operations such as copy, encrypt and delete alongside VHDL development.",
               "Parsed serial output to display directories and files.",
@@ -95,163 +154,368 @@ const content = {
             ]
           },
           {
-            title: "SPARK",
-            summary: "Parking-lot management product using MQTT for organizations and departments.",
-            bullets: [
+            "title": "SPARK",
+            "summary": "Parking-lot management product using MQTT for organizations and departments.",
+            "bullets": [
               "Categorized user privileges and extracted use cases for each user type.",
               "Designed application lifecycle diagrams in Microsoft Visio.",
               "Designed UX around each user's permission set."
             ]
-          },
-          {
-            title: "smart.nobka",
-            summary: "E-commerce and marketing work for NOBKA smart-home and IoT products.",
-            bullets: [
-              "Designed UX and UI for the website and implemented a responsive e-commerce experience.",
-              "Prepared product specification structures and reusable product-image templates.",
-              "Planned social-media, marketplace and advertising campaigns with dedicated landing pages and GIF banners.",
-              "Implemented SEO on product pages with valid structured product schemas and connected Google SEO tooling.",
-              "Recorded and edited product unboxing videos.",
-              "Used web AR to connect target images to product-unboxing video experiences in the real world."
-            ]
-          },
-          {
-            title: "Titime",
-            summary: "Attendance product using a cross-platform application and real-time location for presence verification.",
-            bullets: [
-              "Designed an SEO-oriented introduction website and implemented the responsive site with WordPress.",
-              "Wrote tutorial scenarios and recorded separate guidance videos for users and administrators.",
-              "Extracted product features and designed website banners with custom SVG illustrations.",
-              "Designed catalog, banner and flyer material for APPEX 2024 in Tehran.",
-              "Configured Google SEO tooling for the website."
-            ]
           }
+        ],
+        "bullets": [
+          "Built React/Redux device administration interfaces with reusable components, complex forms and feature-based API integration.",
+          "Developed a TypeScript/React messenger extension using Chrome Manifest V3 and backend API validation flows.",
+          "Built a C# file manager for encrypted serial communication and byte-level file transfer."
         ]
       }
     ],
-    projects: [
+    "projects": [
       {
-        title: "CRM Platform",
-        body: "Backend development for CRM, reporting and operational workflows. Work includes Django APIs, PostgreSQL data models, reporting/KPI endpoints, permission-aware features and deployment pipelines.",
-        tags: ["Django", "PostgreSQL", "REST API", "Permissions", "CI/CD"]
+        "title": "CRM Platform",
+        "body": "Developed a modular CRM backend supporting customer service operations, workforce management and business reporting. Tenant isolation, SSO, private attachments, SLA reporting and optimised activity exports.",
+        "tags": [
+          "Python",
+          "Django REST Framework",
+          "Multi-Tenancy",
+          "CQRS",
+          "SQL"
+        ]
       },
       {
-        title: "Authentication & Authorization",
-        body: "Access-control implementation for enterprise application flows, separating authentication from authorization and combining role permissions with policy and object-level checks where needed.",
-        tags: ["RBAC", "ABAC", "Object permissions", "Least privilege"]
+        "title": "Authentication & Authorization",
+        "body": "Access-control implementation for enterprise application flows, separating authentication from authorization and combining role permissions with policy and object-level checks where needed.",
+        "tags": [
+          "RBAC",
+          "ABAC",
+          "Object permissions",
+          "Least privilege"
+        ]
       },
       {
-        title: "Kiosk Builder",
-        body: "Software engineering work around kiosk-builder functionality and integration with backend services. Production implementation details remain private.",
-        tags: ["Product engineering", "Backend integration"]
+        "title": "Kiosk Builder",
+        "body": "Software engineering work around kiosk-builder functionality and integration with backend services. Production implementation details remain private.",
+        "tags": [
+          "Product engineering",
+          "Backend integration"
+        ]
       },
       {
-        title: "Successo",
-        body: "Backend/API and production deployment work for Successo services, including Linux-side service troubleshooting and API documentation availability.",
-        tags: ["REST API", "Linux", "Deployment", "Operations"]
+        "title": "Successo",
+        "body": "Backend/API and production deployment work for Successo services, including Linux-side service troubleshooting and API documentation availability.",
+        "tags": [
+          "REST API",
+          "Linux",
+          "Deployment",
+          "Operations"
+        ]
       },
       {
-        title: "CRM Agent Orchestration",
-        body: "Architecture work for adding multi-agent orchestration to an existing backend, including task state, handoffs, graph-style execution and documentation boundaries.",
-        tags: ["Backend architecture", "Agents", "Orchestration", "Documentation"]
+        "title": "CRM Agent Orchestration",
+        "body": "Architecture work for adding multi-agent orchestration to an existing backend, including task state, handoffs, graph-style execution and documentation boundaries.",
+        "tags": [
+          "Backend architecture",
+          "Agents",
+          "Orchestration",
+          "Documentation"
+        ]
       }
     ],
-    university: [
-      { title: "Commerce application", body: "Mobile commerce application implemented with Flutter, Dart and Firebase." },
-      { title: "Street-sign recognition", body: "Street-sign recognition project using the YOLO object-detection algorithm." },
-      { title: "Market forecasting", body: "Market forecasting experiment using artificial intelligence and an LSTM model." },
-      { title: "Auction marketplace", body: "Buying and selling application built around an auction core using the MERN stack." }
+    "university": [
+      {
+        "title": "Commerce application",
+        "body": "Mobile commerce application implemented with Flutter, Dart and Firebase."
+      },
+      {
+        "title": "Street-sign recognition",
+        "body": "Street-sign recognition project using the YOLO object-detection algorithm."
+      },
+      {
+        "title": "Market forecasting",
+        "body": "Market forecasting experiment using artificial intelligence and an LSTM model."
+      },
+      {
+        "title": "Auction marketplace",
+        "body": "Buying and selling application built around an auction core using the MERN stack."
+      }
     ],
-    freelance: [
-      { title: "Online diet website", url: "https://drmostafavidiet.ir/", image: "https://hosseinsam.github.io/assets/dr-937a478e.png" },
-      { title: "Titime Attendance system", url: "https://titime.ir/", image: "https://hosseinsam.github.io/assets/titime-4b78d651.png" },
-      { title: "Auto parts store", url: "https://autozafar.ir/", image: "https://hosseinsam.github.io/assets/auto-ca490d1a.png" },
-      { title: "Car audio system store", url: "https://k1system.ir/", image: "https://hosseinsam.github.io/assets/k1-f0aee7dd.png" },
-      { title: "Sallivan Store", url: "https://sallivanstore.ir/", image: "https://hosseinsam.github.io/assets/sali-8b198acb.png" },
-      { title: "ShineMakeup Store", url: "https://shinemakeup.ir/", image: "https://hosseinsam.github.io/assets/shine-74e4265e.png" },
-      { title: "BamiPet Store", url: "https://bamipet.com/", image: "https://hosseinsam.github.io/assets/bami-37bf4a2e.png" },
-      { title: "Pawgato", url: "https://pawgato.com/", image: "https://hosseinsam.github.io/assets/paw-218cc36a.png" },
-      { title: "Smart home Store", url: "https://smart.nobka.ir/", image: "https://hosseinsam.github.io/assets/smart-e1dbe507.png" }
+    "auth": [
+      {
+        "title": "Authentication boundary",
+        "body": "Identity, session or token validation is kept separate from authorization decisions so each layer can be tested and changed independently."
+      },
+      {
+        "title": "RBAC",
+        "body": "Permissions are grouped by organizational role when job responsibilities provide a stable access boundary."
+      },
+      {
+        "title": "ABAC / policy rules",
+        "body": "User, tenant, resource, request and domain attributes can be evaluated when role-only rules are not expressive enough."
+      },
+      {
+        "title": "Object-level authorization",
+        "body": "Permission checks can be evaluated on the specific record or resource, not only at route level. This is important for ownership and tenant isolation."
+      },
+      {
+        "title": "ACL / ReBAC",
+        "body": "Direct grants or relationship-based rules are useful when access depends on links between a user, team, organization and resource."
+      },
+      {
+        "title": "Security principles",
+        "body": "Least privilege, deny by default, explicit permission checks, centralized policy logic, predictable failures and auditable access decisions."
+      }
     ],
-    auth: [
-      { title: "Authentication boundary", body: "Identity, session or token validation is kept separate from authorization decisions so each layer can be tested and changed independently." },
-      { title: "RBAC", body: "Permissions are grouped by organizational role when job responsibilities provide a stable access boundary." },
-      { title: "ABAC / policy rules", body: "User, tenant, resource, request and domain attributes can be evaluated when role-only rules are not expressive enough." },
-      { title: "Object-level authorization", body: "Permission checks can be evaluated on the specific record or resource, not only at route level. This is important for ownership and tenant isolation." },
-      { title: "ACL / ReBAC", body: "Direct grants or relationship-based rules are useful when access depends on links between a user, team, organization and resource." },
-      { title: "Security principles", body: "Least privilege, deny by default, explicit permission checks, centralized policy logic, predictable failures and auditable access decisions." }
+    "skills": [
+      {
+        "title": "Backend",
+        "body": "Python · Django · Django REST Framework · REST APIs · CQRS · Multi-Tenancy · SSO · RBAC · Automated Testing"
+      },
+      {
+        "title": "Data",
+        "body": "PostgreSQL, relational modeling, SQL/query design, indexes, reporting and performance-oriented data work."
+      },
+      {
+        "title": "Frontend",
+        "body": "JavaScript, TypeScript, React, Redux, Axios, HTML and CSS. Comfortable moving into frontend work when the product requires it."
+      },
+      {
+        "title": "Desktop / device integration",
+        "body": "C#, serial-port communication, byte-level file transfer, encrypted device workflows and collaboration around VHDL command design."
+      },
+      {
+        "title": "Architecture & quality",
+        "body": "Modular plugins, tenant isolation, centralised authorisation, explicit transaction boundaries, resource permissions and automated failure-scenario tests."
+      },
+      {
+        "title": "Delivery",
+        "body": "Docker, Linux, Git, GitHub Actions, GitLab CI/CD, deployment troubleshooting and technical documentation."
+      }
     ],
-    skills: [
-      { title: "Backend", body: "Python, Django, Django REST Framework, REST APIs, domain modeling, authentication, authorization and backend architecture." },
-      { title: "Data", body: "PostgreSQL, relational modeling, SQL/query design, indexes, reporting and performance-oriented data work." },
-      { title: "Frontend", body: "JavaScript, TypeScript, React, Redux, Axios, HTML and CSS. Comfortable moving into frontend work when the product requires it." },
-      { title: "Desktop / device integration", body: "C#, serial-port communication, byte-level file transfer, encrypted device workflows and collaboration around VHDL command design." },
-      { title: "IoT / AR / product", body: "MQTT, AR.js, Vuforia, Unity, GLB assets, WordPress, SEO, structured product data and product-focused UX/UI." },
-      { title: "Delivery", body: "Docker, Linux, Git, GitHub Actions, GitLab CI/CD, deployment troubleshooting and technical documentation." }
+    "contact": {
+      "currentGithub": "Current GitHub",
+      "originalGithub": "Original GitHub"
+    },
+    "footer": {
+      "line": "Software engineering · full-stack background · backend focus"
+    },
+    "repo": {
+      "fallback": "Public GitHub repository.",
+      "statusLive": "Public repositories loaded from GitHub.",
+      "statusFallback": "GitHub API is unavailable; showing the local fallback list.",
+      "fork": "Fork"
+    },
+    "freelance": [
+      {
+        "title": "Online diet website",
+        "url": "https://drmostafavidiet.ir/",
+        "image": "https://hosseinsam.github.io/assets/dr-937a478e.png",
+        "body": "Client website project from my freelance portfolio.",
+        "code": null
+      },
+      {
+        "title": "Auto parts store",
+        "url": "https://autozafar.ir/",
+        "image": "https://hosseinsam.github.io/assets/auto-ca490d1a.png",
+        "body": "Client website project from my freelance portfolio.",
+        "code": null
+      },
+      {
+        "title": "Car audio system store",
+        "url": "https://k1system.ir/",
+        "image": "https://hosseinsam.github.io/assets/k1-f0aee7dd.png",
+        "body": "Client website project from my freelance portfolio.",
+        "code": null
+      },
+      {
+        "title": "Sallivan Store",
+        "url": "https://sallivanstore.ir/",
+        "image": "https://hosseinsam.github.io/assets/sali-8b198acb.png",
+        "body": "Client website project from my freelance portfolio.",
+        "code": null
+      },
+      {
+        "title": "ShineMakeup Store",
+        "url": "https://shinemakeup.ir/",
+        "image": "https://hosseinsam.github.io/assets/shine-74e4265e.png",
+        "body": "Client website project from my freelance portfolio.",
+        "code": null
+      },
+      {
+        "title": "BamiPet Store",
+        "url": "https://bamipet.com/",
+        "image": "https://hosseinsam.github.io/assets/bami-37bf4a2e.png",
+        "body": "Client website project from my freelance portfolio.",
+        "code": null
+      },
+      {
+        "title": "Pawgato",
+        "url": "https://pawgato.com/",
+        "image": "https://hosseinsam.github.io/assets/paw-218cc36a.png",
+        "body": "Client frontend project with dark-mode support.",
+        "code": "https://github.com/hosseinsam/pawgatoFrontWithDarkmode"
+      }
     ],
-    contact: { currentGithub: "Current GitHub", originalGithub: "Original GitHub" },
-    footer: { line: "Software engineering · full-stack background · backend focus" },
-    repo: {
-      fallback: "Public GitHub repository.",
-      statusLive: "Public repositories loaded from GitHub.",
-      statusFallback: "GitHub API is unavailable; showing the local fallback list.",
-      fork: "Fork"
-    }
+    "personal": [
+      {
+        "title": "GreenProof",
+        "body": "Environmental-impact marketplace project using Next.js, NestJS, PostgreSQL, Prisma and Docker.",
+        "tags": [
+          "Next.js",
+          "NestJS",
+          "PostgreSQL",
+          "Prisma"
+        ],
+        "url": "https://github.com/hosseinsam/greenProof"
+      },
+      {
+        "title": "Ollama GUI",
+        "body": "Web interface for interacting with locally running Ollama and language models.",
+        "tags": [
+          "TypeScript",
+          "LLM",
+          "Ollama"
+        ],
+        "url": "https://github.com/hosseinsam/ollama-gui"
+      },
+      {
+        "title": "PQC JWT Starter",
+        "body": "JWT authentication starter exploring post-quantum cryptography concepts.",
+        "tags": [
+          "TypeScript",
+          "JWT",
+          "Cryptography"
+        ],
+        "url": "https://github.com/hosseinsam/pqc-jwt-starter"
+      }
+    ],
+    "employerProducts": [
+      {
+        "title": "Titime",
+        "url": "https://titime.ir/",
+        "body": "Attendance product from my NOBKA portfolio."
+      },
+      {
+        "title": "NOBKA Smart Home",
+        "url": "https://smart.nobka.ir/",
+        "body": "Smart-home and IoT product website from my NOBKA portfolio."
+      }
+    ]
   },
-
-  fa: {
-    nav: { about: "درباره", experience: "تجربه", projects: "پروژه‌ها", freelance: "فریلنس", skills: "مهارت‌ها", contact: "ارتباط" },
-    actions: { print: "چاپ رزومه", live: "مشاهده سایت" },
-    hero: {
-      role: "مهندس نرم‌افزار",
-      title: "تجربه فول‌استک، تمرکز فعلی روی بک‌اند.",
-      summary: "به‌عنوان مهندس نرم‌افزار در بخش‌های مختلف محصول کار می‌کنم. نقش فعلی من در GreenBank روی بک‌اند متمرکز است و با Django، PostgreSQL، طراحی API، احراز هویت و مجوزدهی کار می‌کنم. تجربه قبلی من شامل فرانت‌اند، نرم‌افزار دسکتاپ، IoT، واقعیت افزوده، فروشگاه اینترنتی و محصولات فول‌استک است."
+  "fa": {
+    "nav": {
+      "about": "درباره",
+      "experience": "سوابق شغلی",
+      "skills": "مهارت‌ها",
+      "contact": "ارتباط",
+      "showcases": "اپلیکیشن‌ها",
+      "freelance": "پروژه‌های فریلنس",
+      "personal": "پروژه‌های شخصی"
     },
-    sections: {
-      about: { label: "پروفایل", title: "مهندس نرم‌افزار، نه محدود به یک لایه.", note: "در صورت نیاز محصول می‌توانم در فرانت‌اند یا بک‌اند کار کنم. در دو ماه اخیر کار روزمره من بک‌اند بوده و Django و PostgreSQL هسته اصلی کار فعلی هستند." },
-      experience: { label: "تجربه", title: "سوابق حرفه‌ای" },
-      projects: { label: "کارهای منتخب", title: "پروژه‌های فعلی و خصوصی", note: "همه مخازن محیط تولید عمومی نیستند؛ بنابراین این بخش حوزه مهندسی را توضیح می‌دهد و وارد جزئیات خصوصی پیاده‌سازی نمی‌شود." },
-      university: { label: "۲۰۱۷–۲۰۲۲", title: "پروژه‌های دانشگاه", note: "پروژه‌های دوره دانشگاه در حوزه موبایل، بینایی ماشین، یادگیری ماشین و سیستم‌های وب فول‌استک." },
-      freelance: { label: "فریلنس", title: "پروژه‌های وب", note: "پروژه‌های موجود در پورتفولیوی قبلی همراه با لینک عمومی آن‌ها در این نسخه حفظ شده‌اند." },
-      auth: { label: "امنیت بک‌اند", title: "احراز هویت و مجوزدهی", note: "تأیید هویت را از تصمیم دسترسی جدا نگه می‌دارم و بعد متناسب با دامنه از مدل مجوزدهی مناسب استفاده می‌کنم." },
-      skills: { label: "مهارت‌ها", title: "فناوری‌های کاری" },
-      github: { label: "کارهای عمومی", title: "مخازن GitHub", note: "این بخش مخازن عمومی را از هر دو حساب GitHub بارگذاری می‌کند. در صورت در دسترس نبودن GitHub، فهرست محلی نمایش داده می‌شود." },
-      contact: { label: "ارتباط", title: "لینک‌ها" }
+    "actions": {
+      "print": "چاپ CV انگلیسی · یک صفحه",
+      "live": "مشاهده سایت"
     },
-    profile: [
-      { title: "تمرکز فعلی", body: "مهندسی بک‌اند در GreenBank با Django، Django REST Framework، PostgreSQL، طراحی API، مدل داده، احراز هویت، مجوزدهی و استقرار محیط تولید." },
-      { title: "دامنه تجربه", body: "تجربه فول‌استک در React/TypeScript، APIهای بک‌اند، دسکتاپ C#، ارتباط سریال، MQTT/IoT، AR، WordPress، SEO و طراحی محصول و UI/UX." },
-      { title: "تحصیلات", body: "دانشگاه زنجان، ۲۰۱۷ تا ۲۰۲۲. پروژه‌های دانشگاه شامل تجارت موبایل، بینایی ماشین، پیش‌بینی LSTM و مارکت‌پلیس مزایده با MERN بوده است." }
-    ],
-    experience: [
+    "hero": {
+      "role": "مهندس نرم‌افزار — بک‌اند (Python/Django)",
+      "title": "سیستم‌های بک‌اند برای عملیات واقعی.",
+      "summary": "در Greenbank بک‌اند ماژولار برای خدمات مشتری، مدیریت نیروی کار و گزارش‌های کسب‌وکار توسعه می‌دهم. تمرکز من APIهای Python/Django، معماری چندسازمانی، SSO، مجوزدهی مبتنی بر policy و تست خودکار است. تجربه قبلی من شامل React/TypeScript، برنامه‌های دسکتاپ C# و ارتباط با دستگاه‌هاست."
+    },
+    "sections": {
+      "about": {
+        "label": "پروفایل",
+        "title": "مرزهای امن، سیستم‌های قابل نگهداری.",
+        "note": "طراحی API، جداسازی داده و کنترل دسترسی را به نیازهای عملیاتی محصول متصل می‌کنم؛ با تراکنش‌های صریح و تست مسیرهای خطا."
+      },
+      "experience": {
+        "label": "تجربه",
+        "title": "سوابق شغلی"
+      },
+      "projects": {
+        "label": "پروژه‌های سازمانی",
+        "title": "مهندسی در محیط کار",
+        "note": "همه مخازن محیط تولید عمومی نیستند؛ بنابراین این بخش حوزه مهندسی را توضیح می‌دهد و وارد جزئیات خصوصی پیاده‌سازی نمی‌شود."
+      },
+      "university": {
+        "label": "۲۰۱۷–۲۰۲۲",
+        "title": "پروژه‌های دانشگاه",
+        "note": "پروژه‌های دوره دانشگاه در حوزه موبایل، بینایی ماشین، یادگیری ماشین و سیستم‌های وب فول‌استک."
+      },
+      "auth": {
+        "label": "امنیت بک‌اند",
+        "title": "احراز هویت و مجوزدهی",
+        "note": "تأیید هویت را از تصمیم دسترسی جدا نگه می‌دارم و بعد متناسب با دامنه از مدل مجوزدهی مناسب استفاده می‌کنم."
+      },
+      "skills": {
+        "label": "مهارت‌ها",
+        "title": "فناوری‌های کاری"
+      },
+      "github": {
+        "label": "کارهای عمومی",
+        "title": "مخازن GitHub",
+        "note": "این بخش مخازن عمومی را از هر دو حساب GitHub بارگذاری می‌کند. در صورت در دسترس نبودن GitHub، فهرست محلی نمایش داده می‌شود."
+      },
+      "contact": {
+        "label": "ارتباط",
+        "title": "لینک‌ها"
+      },
+      "showcases": {
+        "label": "پروژه‌های شخصی",
+        "title": "اپلیکیشن‌های مستقل من.",
+        "note": "اپلیکیشن‌هایی مستقل از سوابق شغلی و پروژه‌های مشتریان فریلنس."
+      },
+      "freelance": {
+        "label": "پروژه‌های مشتریان",
+        "title": "پروژه‌های فریلنس",
+        "note": "وب‌سایت‌های مشتریان و پروژه‌های فرانت‌اند از مجموعه فریلنس من. محصولات سازمانی در بخش سوابق شغلی آمده‌اند."
+      }
+    },
+    "profile": [
       {
-        company: "GreenBank",
-        role: "مهندس نرم‌افزار — تمرکز بک‌اند",
-        date: "تیر ۱۴۰۵ — اکنون",
-        summary: "نقش فعلی با تمرکز بر توسعه بک‌اند سیستم‌های کسب‌وکار و سرویس‌های مرتبط با CRM با Django و PostgreSQL.",
-        bullets: [
-          "طراحی و پیاده‌سازی API و منطق دامنه با Django و Django REST Framework.",
-          "مدل‌سازی داده در PostgreSQL و کار روی query، گزارش‌گیری و workloadهای مرتبط با KPI.",
-          "پیاده‌سازی احراز هویت و مجوزدهی با جداسازی روشن هویت از تصمیم‌های کنترل دسترسی.",
-          "استفاده از RBAC، policy/attribute check و مجوزدهی سطح object در صورت نیاز دامنه.",
-          "کار روی قابلیت‌های CRM، معماری بک‌اند، CI/CD، استقرار و مستندات فنی."
+        "title": "تمرکز فعلی",
+        "body": "در Greenbank بک‌اند ماژولار برای خدمات مشتری، مدیریت نیروی کار و گزارش‌های کسب‌وکار توسعه می‌دهم. تمرکز من APIهای Python/Django، معماری چندسازمانی، SSO، مجوزدهی مبتنی بر policy و تست خودکار است. تجربه قبلی من شامل React/TypeScript، برنامه‌های دسکتاپ C# و ارتباط با دستگاه‌هاست."
+      },
+      {
+        "title": "دامنه تجربه",
+        "body": "React، TypeScript و اتصال API؛ برنامه‌های دسکتاپ C#، ارتباط سریال رمزنگاری‌شده، MQTT و گردش‌کارهای IoT."
+      },
+      {
+        "title": "تحصیلات",
+        "body": "دانشگاه زنجان، ۲۰۱۷ تا ۲۰۲۲. پروژه‌های دانشگاه شامل تجارت موبایل، بینایی ماشین، پیش‌بینی LSTM و مارکت‌پلیس مزایده با MERN بوده است."
+      }
+    ],
+    "experience": [
+      {
+        "company": "Greenbank",
+        "role": "مهندس نرم‌افزار — بک‌اند (Python/Django)",
+        "date": "ژوئن ۲۰۲۶ — اکنون",
+        "summary": "توسعه بک‌اند ماژولار CRM برای عملیات خدمات مشتری، مدیریت نیروی کار و گزارش‌های کسب‌وکار.",
+        "bullets": [
+          "ساخت REST API با Python، Django و Django REST Framework با الگوی CQRS و مرزهای صریح تراکنش.",
+          "پیاده‌سازی جداسازی داده‌های سازمان‌ها، راه‌اندازی tenant و مدیریت عضویت برای حفاظت از داده‌ها.",
+          "یکپارچه‌سازی SSO و مجوزدهی متمرکز مبتنی بر نقش و policy در APIها و command handlerها.",
+          "توسعه آپلود خصوصی پیوست و دانلود احراز هویت‌شده با اعتبارسنجی فایل و مجوز در سطح منبع.",
+          "توسعه شاخص‌های پشتیبانی، گزارش SLA و خروجی فعالیت‌ها؛ بهینه‌سازی پردازش خروجی در بازه‌های زمانی بزرگ.",
+          "توسعه گردش‌کارهای افزونه‌ای و تست خودکار مجوزها، جداسازی tenant و سناریوهای خطا."
         ]
       },
       {
-        company: "NOBKA",
-        role: "مهندس نرم‌افزار",
-        date: "۲۰۲۱ — تیر ۱۴۰۵",
-        summary: "فعالیت در پروژه‌های فرانت‌اند، دسکتاپ، IoT، AR، فروشگاه اینترنتی و مهندسی محصول در یک هلدینگ فعال در محصولات الکترونیکی و نرم‌افزاری.",
-        projects: [
+        "company": "NOBKA",
+        "role": "مهندس نرم‌افزار",
+        "date": "۲۰۲۱ — ژوئن ۲۰۲۶",
+        "summary": "توسعه رابط‌های وب، نرم‌افزار دسکتاپ و ارتباط با دستگاه‌ها برای محصولات الکترونیکی و نرم‌افزاری.",
+        "projects": [
           {
-            title: "VOIP System",
-            summary: "پنل مدیریتی برای پیکربندی سیستم VoIP.",
-            bullets: ["طراحی UI پنل مدیریت.", "پیاده‌سازی داشبورد با HTML، CSS و JavaScript."]
+            "title": "VOIP System",
+            "summary": "پنل مدیریتی برای پیکربندی سیستم VoIP.",
+            "bullets": [
+              "طراحی UI پنل مدیریت.",
+              "پیاده‌سازی داشبورد با HTML، CSS و JavaScript."
+            ]
           },
           {
-            title: "LTE Modem",
-            summary: "داشبورد مدیریتی واکنش‌گرا برای محصول مودم با بخش‌های تنظیماتی متعدد.",
-            bullets: [
+            "title": "LTE Modem",
+            "summary": "داشبورد مدیریتی واکنش‌گرا برای محصول مودم با بخش‌های تنظیماتی متعدد.",
+            "bullets": [
               "پیاده‌سازی داشبورد با React، Redux و Axios.",
               "ساخت کامپوننت‌های قابل استفاده مجدد مانند Radio، Multiselect، Input، Menu Button و Loading.",
               "مدیریت فرم‌های پیچیده با redux-form و hookهای React.",
@@ -262,27 +526,27 @@ const content = {
             ]
           },
           {
-            title: "Messenger Chrome Extension",
-            summary: "پیام‌رسان مرورگر با نیازمندی رمزنگاری end-to-end.",
-            bullets: [
+            "title": "Messenger Chrome Extension",
+            "summary": "پیام‌رسان مرورگر با نیازمندی رمزنگاری end-to-end.",
+            "bullets": [
               "طراحی UI و UX پیام‌رسان.",
               "پیاده‌سازی فرانت‌اند با TypeScript، React و Chrome Extension Manifest V3.",
               "کار روی جریان‌های SDK برای اعتبارسنجی تغییر کلید کاربران و عملیات مرتبط از طریق APIهای بک‌اند."
             ]
           },
           {
-            title: "AR Research",
-            summary: "تحقیق و نمونه‌سازی برای بازاریابی محصول با واقعیت افزوده.",
-            bullets: [
+            "title": "AR Research",
+            "summary": "تحقیق و نمونه‌سازی برای بازاریابی محصول با واقعیت افزوده.",
+            "bullets": [
               "نمونه‌سازی Web AR با AR.js برای نمایش ویدئوی قابل کنترل روی target مشخص.",
               "استفاده از Vuforia و Unity برای ساخت نمونه Android چند target.",
               "آماده‌سازی مدل‌های محصول با فرمت GLB."
             ]
           },
           {
-            title: "FileManager",
-            summary: "فایل‌منیجر دسکتاپ برای ارتباط با دستگاه رمزنگاری‌شده از طریق serial port.",
-            bullets: [
+            "title": "FileManager",
+            "summary": "فایل‌منیجر دسکتاپ برای ارتباط با دستگاه رمزنگاری‌شده از طریق serial port.",
+            "bullets": [
               "پیاده‌سازی برنامه با C# و ارتباط serial رمزنگاری‌شده.",
               "همکاری در طراحی commandهایی مانند copy، encrypt و delete در کنار توسعه VHDL.",
               "parse کردن خروجی serial برای نمایش directory و file.",
@@ -292,88 +556,252 @@ const content = {
             ]
           },
           {
-            title: "SPARK",
-            summary: "محصول مدیریت پارکینگ سازمان‌ها و دپارتمان‌ها با MQTT.",
-            bullets: [
+            "title": "SPARK",
+            "summary": "محصول مدیریت پارکینگ سازمان‌ها و دپارتمان‌ها با MQTT.",
+            "bullets": [
               "دسته‌بندی سطح دسترسی کاربران و استخراج use case هر نوع کاربر.",
               "طراحی نمودار چرخه عمر برنامه با Microsoft Visio.",
               "طراحی UX بر اساس permission هر کاربر."
             ]
-          },
-          {
-            title: "smart.nobka",
-            summary: "فروشگاه و فعالیت‌های بازاریابی محصولات خانه هوشمند و IoT شرکت.",
-            bullets: [
-              "طراحی UX/UI و پیاده‌سازی وب‌سایت فروشگاهی واکنش‌گرا.",
-              "طراحی ساختار مشخصات محصول و templateهای تصویری قابل استفاده مجدد.",
-              "برنامه‌ریزی شبکه اجتماعی، مارکت‌پلیس و کمپین تبلیغاتی همراه با landing page و GIF banner.",
-              "پیاده‌سازی SEO صفحات محصول با structured schema معتبر و اتصال ابزارهای Google SEO.",
-              "ضبط و تدوین ویدئوهای unboxing محصول.",
-              "استفاده از Web AR برای نمایش ویدئوی unboxing با شناسایی target image."
-            ]
-          },
-          {
-            title: "Titime",
-            summary: "سیستم حضور و غیاب با اپلیکیشن cross-platform و location بلادرنگ برای تأیید حضور.",
-            bullets: [
-              "طراحی سایت معرفی با ساختار SEO و پیاده‌سازی نسخه واکنش‌گرا با WordPress.",
-              "نوشتن سناریو و ضبط ویدئوی آموزشی جداگانه برای کاربر و مدیر.",
-              "استخراج قابلیت‌های محصول و طراحی بنر با SVG اختصاصی.",
-              "طراحی کاتالوگ، بنر و فلایر نمایشگاه APPEX 2024 تهران.",
-              "راه‌اندازی ابزارهای Google SEO روی وب‌سایت."
-            ]
           }
+        ],
+        "bullets": [
+          "ساخت پنل مدیریت دستگاه با React/Redux، کامپوننت‌های قابل استفاده مجدد، فرم‌های پیچیده و اتصال API.",
+          "توسعه افزونه پیام‌رسان با TypeScript/React و Chrome Manifest V3 و اعتبارسنجی از طریق API بک‌اند.",
+          "ساخت فایل‌منیجر C# با ارتباط سریال رمزنگاری‌شده و انتقال فایل در سطح بایت."
         ]
       }
     ],
-    projects: [
-      { title: "CRM Platform", body: "توسعه بک‌اند برای CRM، گزارش‌گیری و جریان‌های عملیاتی شامل APIهای Django، مدل‌های PostgreSQL، endpointهای گزارش و KPI، قابلیت‌های permission-aware و pipelineهای استقرار.", tags: ["Django", "PostgreSQL", "REST API", "Permissions", "CI/CD"] },
-      { title: "Authentication & Authorization", body: "پیاده‌سازی کنترل دسترسی برای جریان‌های سازمانی با جداسازی authentication از authorization و ترکیب role permission با policy و object-level check در صورت نیاز.", tags: ["RBAC", "ABAC", "Object permissions", "Least privilege"] },
-      { title: "Kiosk Builder", body: "فعالیت مهندسی نرم‌افزار روی قابلیت‌های kiosk builder و اتصال آن به سرویس‌های بک‌اند. جزئیات محیط تولید خصوصی است.", tags: ["Product engineering", "Backend integration"] },
-      { title: "Successo", body: "کار روی بک‌اند/API و استقرار سرویس‌های Successo، شامل عیب‌یابی سرویس در Linux و دسترسی صحیح مستندات API در محیط تولید.", tags: ["REST API", "Linux", "Deployment", "Operations"] },
-      { title: "CRM Agent Orchestration", body: "طراحی معماری برای اضافه کردن orchestration چندعاملی به بک‌اند موجود، شامل state، handoff، اجرای graph-based و مرزبندی مستندات.", tags: ["Backend architecture", "Agents", "Orchestration", "Documentation"] }
+    "projects": [
+      {
+        "title": "CRM Platform",
+        "body": "توسعه بک‌اند ماژولار CRM برای عملیات خدمات مشتری، مدیریت نیروی کار و گزارش‌های کسب‌وکار. جداسازی tenant، SSO، پیوست خصوصی، گزارش SLA و خروجی بهینه فعالیت‌ها.",
+        "tags": [
+          "Python",
+          "Django REST Framework",
+          "Multi-Tenancy",
+          "CQRS",
+          "SQL"
+        ]
+      },
+      {
+        "title": "Authentication & Authorization",
+        "body": "پیاده‌سازی کنترل دسترسی برای جریان‌های سازمانی با جداسازی authentication از authorization و ترکیب role permission با policy و object-level check در صورت نیاز.",
+        "tags": [
+          "RBAC",
+          "ABAC",
+          "Object permissions",
+          "Least privilege"
+        ]
+      },
+      {
+        "title": "Kiosk Builder",
+        "body": "فعالیت مهندسی نرم‌افزار روی قابلیت‌های kiosk builder و اتصال آن به سرویس‌های بک‌اند. جزئیات محیط تولید خصوصی است.",
+        "tags": [
+          "Product engineering",
+          "Backend integration"
+        ]
+      },
+      {
+        "title": "Successo",
+        "body": "کار روی بک‌اند/API و استقرار سرویس‌های Successo، شامل عیب‌یابی سرویس در Linux و دسترسی صحیح مستندات API در محیط تولید.",
+        "tags": [
+          "REST API",
+          "Linux",
+          "Deployment",
+          "Operations"
+        ]
+      },
+      {
+        "title": "CRM Agent Orchestration",
+        "body": "طراحی معماری برای اضافه کردن orchestration چندعاملی به بک‌اند موجود، شامل state، handoff، اجرای graph-based و مرزبندی مستندات.",
+        "tags": [
+          "Backend architecture",
+          "Agents",
+          "Orchestration",
+          "Documentation"
+        ]
+      }
     ],
-    university: [
-      { title: "Commerce application", body: "اپلیکیشن تجارت موبایل با Flutter، Dart و Firebase." },
-      { title: "Street-sign recognition", body: "پروژه تشخیص تابلوهای خیابانی با الگوریتم object detection مدل YOLO." },
-      { title: "Market forecasting", body: "آزمایش پیش‌بینی بازار با هوش مصنوعی و مدل LSTM." },
-      { title: "Auction marketplace", body: "سیستم خرید و فروش مبتنی بر هسته مزایده با MERN stack." }
+    "university": [
+      {
+        "title": "Commerce application",
+        "body": "اپلیکیشن تجارت موبایل با Flutter، Dart و Firebase."
+      },
+      {
+        "title": "Street-sign recognition",
+        "body": "پروژه تشخیص تابلوهای خیابانی با الگوریتم object detection مدل YOLO."
+      },
+      {
+        "title": "Market forecasting",
+        "body": "آزمایش پیش‌بینی بازار با هوش مصنوعی و مدل LSTM."
+      },
+      {
+        "title": "Auction marketplace",
+        "body": "سیستم خرید و فروش مبتنی بر هسته مزایده با MERN stack."
+      }
     ],
-    freelance: [
-      { title: "وب‌سایت رژیم آنلاین", url: "https://drmostafavidiet.ir/", image: "https://hosseinsam.github.io/assets/dr-937a478e.png" },
-      { title: "سیستم حضور و غیاب Titime", url: "https://titime.ir/", image: "https://hosseinsam.github.io/assets/titime-4b78d651.png" },
-      { title: "فروشگاه لوازم خودرو", url: "https://autozafar.ir/", image: "https://hosseinsam.github.io/assets/auto-ca490d1a.png" },
-      { title: "فروشگاه سیستم صوتی خودرو", url: "https://k1system.ir/", image: "https://hosseinsam.github.io/assets/k1-f0aee7dd.png" },
-      { title: "فروشگاه Sallivan", url: "https://sallivanstore.ir/", image: "https://hosseinsam.github.io/assets/sali-8b198acb.png" },
-      { title: "فروشگاه ShineMakeup", url: "https://shinemakeup.ir/", image: "https://hosseinsam.github.io/assets/shine-74e4265e.png" },
-      { title: "فروشگاه BamiPet", url: "https://bamipet.com/", image: "https://hosseinsam.github.io/assets/bami-37bf4a2e.png" },
-      { title: "Pawgato", url: "https://pawgato.com/", image: "https://hosseinsam.github.io/assets/paw-218cc36a.png" },
-      { title: "فروشگاه خانه هوشمند", url: "https://smart.nobka.ir/", image: "https://hosseinsam.github.io/assets/smart-e1dbe507.png" }
+    "auth": [
+      {
+        "title": "مرز Authentication",
+        "body": "اعتبارسنجی هویت، session یا token از تصمیم authorization جدا نگه داشته می‌شود تا هر لایه مستقل قابل تست و تغییر باشد."
+      },
+      {
+        "title": "RBAC",
+        "body": "وقتی مسئولیت‌های شغلی مرز دسترسی پایداری ایجاد می‌کنند، permissionها بر اساس role سازمانی گروه‌بندی می‌شوند."
+      },
+      {
+        "title": "ABAC / Policy",
+        "body": "وقتی role کافی نیست، attributeهای کاربر، tenant، resource، request و context دامنه در تصمیم دسترسی استفاده می‌شوند."
+      },
+      {
+        "title": "Object-level authorization",
+        "body": "دسترسی می‌تواند روی رکورد یا resource مشخص بررسی شود، نه فقط روی route. این موضوع برای ownership و tenant isolation مهم است."
+      },
+      {
+        "title": "ACL / ReBAC",
+        "body": "وقتی دسترسی به grant مستقیم یا رابطه بین کاربر، تیم، سازمان و resource وابسته است، ACL یا مدل relationship-based کاربرد دارد."
+      },
+      {
+        "title": "اصول امنیتی",
+        "body": "Least privilege، deny by default، permission check صریح، policy logic متمرکز، failure قابل پیش‌بینی و access decision قابل audit."
+      }
     ],
-    auth: [
-      { title: "مرز Authentication", body: "اعتبارسنجی هویت، session یا token از تصمیم authorization جدا نگه داشته می‌شود تا هر لایه مستقل قابل تست و تغییر باشد." },
-      { title: "RBAC", body: "وقتی مسئولیت‌های شغلی مرز دسترسی پایداری ایجاد می‌کنند، permissionها بر اساس role سازمانی گروه‌بندی می‌شوند." },
-      { title: "ABAC / Policy", body: "وقتی role کافی نیست، attributeهای کاربر، tenant، resource، request و context دامنه در تصمیم دسترسی استفاده می‌شوند." },
-      { title: "Object-level authorization", body: "دسترسی می‌تواند روی رکورد یا resource مشخص بررسی شود، نه فقط روی route. این موضوع برای ownership و tenant isolation مهم است." },
-      { title: "ACL / ReBAC", body: "وقتی دسترسی به grant مستقیم یا رابطه بین کاربر، تیم، سازمان و resource وابسته است، ACL یا مدل relationship-based کاربرد دارد." },
-      { title: "اصول امنیتی", body: "Least privilege، deny by default، permission check صریح، policy logic متمرکز، failure قابل پیش‌بینی و access decision قابل audit." }
+    "skills": [
+      {
+        "title": "Backend",
+        "body": "Python · Django · Django REST Framework · REST APIs · CQRS · Multi-Tenancy · SSO · RBAC · Automated Testing"
+      },
+      {
+        "title": "Data",
+        "body": "PostgreSQL، relational modeling، SQL/query design، index، reporting و کار داده‌ای با تمرکز بر performance."
+      },
+      {
+        "title": "Frontend",
+        "body": "JavaScript، TypeScript، React، Redux، Axios، HTML و CSS. در صورت نیاز محصول می‌توانم روی فرانت‌اند نیز کار کنم."
+      },
+      {
+        "title": "Desktop / Device",
+        "body": "C#، serial-port communication، انتقال فایل در سطح byte، جریان‌های device رمزنگاری‌شده و همکاری در طراحی commandهای VHDL."
+      },
+      {
+        "title": "معماری و کیفیت",
+        "body": "افزونه‌های ماژولار، جداسازی tenant، مجوزدهی متمرکز، تراکنش‌های صریح، مجوز منابع و تست خودکار سناریوهای خطا."
+      },
+      {
+        "title": "Delivery",
+        "body": "Docker، Linux، Git، GitHub Actions، GitLab CI/CD، عیب‌یابی استقرار و مستندات فنی."
+      }
     ],
-    skills: [
-      { title: "Backend", body: "Python، Django، Django REST Framework، REST API، domain modeling، authentication، authorization و معماری بک‌اند." },
-      { title: "Data", body: "PostgreSQL، relational modeling، SQL/query design، index، reporting و کار داده‌ای با تمرکز بر performance." },
-      { title: "Frontend", body: "JavaScript، TypeScript، React، Redux، Axios، HTML و CSS. در صورت نیاز محصول می‌توانم روی فرانت‌اند نیز کار کنم." },
-      { title: "Desktop / Device", body: "C#، serial-port communication، انتقال فایل در سطح byte، جریان‌های device رمزنگاری‌شده و همکاری در طراحی commandهای VHDL." },
-      { title: "IoT / AR / Product", body: "MQTT، AR.js، Vuforia، Unity، GLB، WordPress، SEO، structured product data و UX/UI محصول." },
-      { title: "Delivery", body: "Docker، Linux، Git، GitHub Actions، GitLab CI/CD، عیب‌یابی استقرار و مستندات فنی." }
+    "contact": {
+      "currentGithub": "GitHub فعلی",
+      "originalGithub": "GitHub قبلی"
+    },
+    "footer": {
+      "line": "مهندسی نرم‌افزار · تجربه فول‌استک · تمرکز بک‌اند"
+    },
+    "repo": {
+      "fallback": "مخزن عمومی GitHub.",
+      "statusLive": "مخازن عمومی از GitHub بارگذاری شدند.",
+      "statusFallback": "API گیت‌هاب در دسترس نیست؛ فهرست محلی نمایش داده می‌شود.",
+      "fork": "Fork"
+    },
+    "freelance": [
+      {
+        "title": "وب‌سایت رژیم آنلاین",
+        "url": "https://drmostafavidiet.ir/",
+        "image": "https://hosseinsam.github.io/assets/dr-937a478e.png",
+        "body": "پروژه وب‌سایت مشتری از مجموعه کارهای فریلنس من.",
+        "code": null
+      },
+      {
+        "title": "فروشگاه لوازم خودرو",
+        "url": "https://autozafar.ir/",
+        "image": "https://hosseinsam.github.io/assets/auto-ca490d1a.png",
+        "body": "پروژه وب‌سایت مشتری از مجموعه کارهای فریلنس من.",
+        "code": null
+      },
+      {
+        "title": "فروشگاه سیستم صوتی خودرو",
+        "url": "https://k1system.ir/",
+        "image": "https://hosseinsam.github.io/assets/k1-f0aee7dd.png",
+        "body": "پروژه وب‌سایت مشتری از مجموعه کارهای فریلنس من.",
+        "code": null
+      },
+      {
+        "title": "فروشگاه Sallivan",
+        "url": "https://sallivanstore.ir/",
+        "image": "https://hosseinsam.github.io/assets/sali-8b198acb.png",
+        "body": "پروژه وب‌سایت مشتری از مجموعه کارهای فریلنس من.",
+        "code": null
+      },
+      {
+        "title": "فروشگاه ShineMakeup",
+        "url": "https://shinemakeup.ir/",
+        "image": "https://hosseinsam.github.io/assets/shine-74e4265e.png",
+        "body": "پروژه وب‌سایت مشتری از مجموعه کارهای فریلنس من.",
+        "code": null
+      },
+      {
+        "title": "فروشگاه BamiPet",
+        "url": "https://bamipet.com/",
+        "image": "https://hosseinsam.github.io/assets/bami-37bf4a2e.png",
+        "body": "پروژه وب‌سایت مشتری از مجموعه کارهای فریلنس من.",
+        "code": null
+      },
+      {
+        "title": "Pawgato",
+        "url": "https://pawgato.com/",
+        "image": "https://hosseinsam.github.io/assets/paw-218cc36a.png",
+        "body": "پروژه فرانت‌اند مشتری با پشتیبانی از حالت تاریک.",
+        "code": "https://github.com/hosseinsam/pawgatoFrontWithDarkmode"
+      }
     ],
-    contact: { currentGithub: "GitHub فعلی", originalGithub: "GitHub قبلی" },
-    footer: { line: "مهندسی نرم‌افزار · تجربه فول‌استک · تمرکز بک‌اند" },
-    repo: {
-      fallback: "مخزن عمومی GitHub.",
-      statusLive: "مخازن عمومی از GitHub بارگذاری شدند.",
-      statusFallback: "API گیت‌هاب در دسترس نیست؛ فهرست محلی نمایش داده می‌شود.",
-      fork: "Fork"
-    }
+    "personal": [
+      {
+        "title": "GreenProof",
+        "body": "پروژه بازار اثرات محیط‌زیستی با Next.js، NestJS، PostgreSQL، Prisma و Docker.",
+        "tags": [
+          "Next.js",
+          "NestJS",
+          "PostgreSQL",
+          "Prisma"
+        ],
+        "url": "https://github.com/hosseinsam/greenProof"
+      },
+      {
+        "title": "Ollama GUI",
+        "body": "رابط وب برای تعامل با Ollama و مدل‌های زبانی اجراشده به‌صورت محلی.",
+        "tags": [
+          "TypeScript",
+          "LLM",
+          "Ollama"
+        ],
+        "url": "https://github.com/hosseinsam/ollama-gui"
+      },
+      {
+        "title": "PQC JWT Starter",
+        "body": "پروژه آغازین احراز هویت JWT برای بررسی مفاهیم رمزنگاری پساکوانتومی.",
+        "tags": [
+          "TypeScript",
+          "JWT",
+          "Cryptography"
+        ],
+        "url": "https://github.com/hosseinsam/pqc-jwt-starter"
+      }
+    ],
+    "employerProducts": [
+      {
+        "title": "Titime",
+        "url": "https://titime.ir/",
+        "body": "محصول حضور و غیاب از مجموعه کارهای من در NOBKA."
+      },
+      {
+        "title": "NOBKA Smart Home",
+        "url": "https://smart.nobka.ir/",
+        "body": "وب‌سایت محصولات خانه هوشمند و IoT از مجموعه کارهای من در NOBKA."
+      }
+    ]
   }
 };
 
@@ -497,7 +925,7 @@ function applyLanguage() {
   renderExperience();
   renderProfessionalProjects();
   renderUniversityProjects();
-  renderFreelance();
+  renderShowcases();
   renderAuthorization();
   renderSkills();
   renderRepos(currentRepos, repoMode);
@@ -566,27 +994,6 @@ function renderUniversityProjects() {
       <p>${escapeHtml(item.body)}</p>
     </article>
   `).join("");
-}
-
-function renderFreelance() {
-  const strings = content[language];
-  const root = document.getElementById("freelanceGrid");
-  root.innerHTML = strings.freelance.map((item) => `
-    <a class="freelance-card" href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">
-      <div class="freelance-thumb">
-        <img src="${escapeAttr(item.image)}" alt="${escapeAttr(item.title)}" loading="lazy" />
-      </div>
-      <div class="freelance-card-body">
-        <h3>${escapeHtml(item.title)}</h3>
-        <p>${escapeHtml(new URL(item.url).hostname.replace(/^www\./, ""))}</p>
-        <span class="open-label">${escapeHtml(strings.actions.live)}</span>
-      </div>
-    </a>
-  `).join("");
-
-  root.querySelectorAll("img").forEach((image) => {
-    image.addEventListener("error", () => image.closest(".freelance-card")?.classList.add("image-missing"), { once: true });
-  });
 }
 
 function renderAuthorization() {
@@ -676,18 +1083,6 @@ async function loadGitHubRepos() {
   }
 }
 
-const printState = new Map();
-window.addEventListener("beforeprint", () => {
-  document.querySelectorAll("details").forEach((details) => {
-    printState.set(details, details.open);
-    details.open = true;
-  });
-});
-window.addEventListener("afterprint", () => {
-  printState.forEach((wasOpen, details) => { details.open = wasOpen; });
-  printState.clear();
-});
-
 document.getElementById("languageButton").addEventListener("click", () => {
   language = language === "en" ? "fa" : "en";
   applyLanguage();
@@ -696,5 +1091,6 @@ document.getElementById("languageButton").addEventListener("click", () => {
 document.getElementById("printButton").addEventListener("click", () => window.print());
 document.getElementById("year").textContent = new Date().getFullYear();
 
+renderResume();
 applyLanguage();
 loadGitHubRepos();

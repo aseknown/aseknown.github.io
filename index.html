@@ -20,9 +20,10 @@
       <a class="name-link" href="#top">Hossein Samadi</a>
       <nav class="main-nav" aria-label="Primary navigation">
         <a href="#about" data-i18n="nav.about">About</a>
-        <a href="#experience" data-i18n="nav.experience">Experience</a>
-        <a href="#projects" data-i18n="nav.projects">Projects</a>
-        <a href="#freelance" data-i18n="nav.freelance">Freelance</a>
+        <a href="#experience" data-i18n="nav.experience">Professional experience</a>
+        <a href="#freelance" data-i18n="nav.freelance">Freelance projects</a>
+        <a href="#personal" data-i18n="nav.personal">Personal projects</a>
+        <a href="#showcases" data-i18n="nav.showcases">Showcases</a>
         <a href="#skills" data-i18n="nav.skills">Skills</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
@@ -35,11 +36,9 @@
 
   <main id="top">
     <section class="intro wrap">
-      <p class="kicker" data-i18n="hero.role">Software Engineer</p>
-      <h1 data-i18n="hero.title">Full-stack background. Backend focus today.</h1>
-      <p class="intro-copy" data-i18n="hero.summary">
-        I work as a software engineer across the stack. My current role at GreenBank is backend-focused, building Django and PostgreSQL systems, APIs, authentication and authorization. My earlier work spans frontend, desktop software, IoT, AR, e-commerce and full-stack products.
-      </p>
+      <p class="kicker" data-i18n="hero.role">Software Engineer — Backend (Python/Django)</p>
+      <h1 data-i18n="hero.title">Backend systems. Built around real operations.</h1>
+      <p class="intro-copy" data-i18n="hero.summary">I build modular backend systems at Greenbank for customer service, workforce management and business reporting. My work brings together Python/Django APIs, multi-tenant architecture, SSO and policy-based authorisation, backed by automated tests. Earlier experience spans React/TypeScript interfaces, C# desktop applications and device integration.</p>
       <div class="intro-links">
         <a href="mailto:hosseinsamadi22@gmail.com">hosseinsamadi22@gmail.com</a>
         <a href="https://github.com/aseknown" target="_blank" rel="noreferrer">github.com/aseknown</a>
@@ -52,11 +51,9 @@
       <div class="section-title split-title">
         <div>
           <p data-i18n="sections.about.label">Profile</p>
-          <h2 data-i18n="sections.about.title">Software engineer, not a single-stack title.</h2>
+          <h2 data-i18n="sections.about.title">Secure boundaries. Maintainable systems.</h2>
         </div>
-        <p class="section-note" data-i18n="sections.about.note">
-          I can work on frontend or backend when the product needs it. For the last two months my day-to-day work has been backend engineering, with Django and PostgreSQL as the core stack.
-        </p>
+        <p class="section-note" data-i18n="sections.about.note">I connect API design, data isolation and access control to the operational needs of the product, with explicit transactions and tests for failure paths.</p>
       </div>
       <div class="profile-grid" id="profileGrid"></div>
     </section>
@@ -64,20 +61,22 @@
     <section class="section wrap" id="experience">
       <div class="section-title">
         <p data-i18n="sections.experience.label">Experience</p>
-        <h2 data-i18n="sections.experience.title">Professional work</h2>
+        <h2 data-i18n="sections.experience.title">Professional experience</h2>
       </div>
       <div id="experienceList"></div>
-    </section>
+      <div class="showcase-grid employer-products" id="employerProducts"></div>
+      <div id="professionalShowcase" class="professional-showcase"></div>
 
-    <section class="section wrap" id="projects">
+    <div class="workplace-projects" id="projects">
       <div class="section-title split-title">
         <div>
-          <p data-i18n="sections.projects.label">Selected work</p>
-          <h2 data-i18n="sections.projects.title">Current and private projects</h2>
+          <p data-i18n="sections.projects.label">Workplace projects</p>
+          <h2 data-i18n="sections.projects.title">Engineering at work</h2>
         </div>
         <p class="section-note" data-i18n="sections.projects.note">Production repositories are not all public, so these entries describe the engineering scope rather than exposing private implementation details.</p>
       </div>
       <div class="work-list" id="professionalProjects"></div>
+    </div>
     </section>
 
     <section class="section wrap" id="university">
@@ -91,15 +90,14 @@
       <div class="simple-list" id="universityProjects"></div>
     </section>
 
-    <section class="section wrap" id="freelance">
-      <div class="section-title split-title">
-        <div>
-          <p data-i18n="sections.freelance.label">Freelance</p>
-          <h2 data-i18n="sections.freelance.title">Web projects</h2>
-        </div>
-        <p class="section-note" data-i18n="sections.freelance.note">Projects from the original portfolio, preserved here with their public preview links.</p>
-      </div>
-      <div class="freelance-grid" id="freelanceGrid"></div>
+<section class="section wrap" id="freelance">
+      <div class="section-title split-title"><div><p data-i18n="sections.freelance.label">Client work</p><h2 data-i18n="sections.freelance.title">Freelance projects</h2></div><p class="section-note" data-i18n="sections.freelance.note"></p></div>
+      <div class="showcase-grid" id="freelanceProjects"></div>
+    </section>
+    <section class="section wrap" id="showcases"><div id="personal">
+      <div class="section-title split-title"><div><p data-i18n="sections.showcases.label">Personal projects</p><h2 data-i18n="sections.showcases.title">Independent apps I build.</h2></div><p class="section-note" data-i18n="sections.showcases.note"></p></div>
+      <div class="showcase-grid" id="showcaseGrid"></div>
+    </div>
     </section>
 
     <section class="section wrap" id="authorization">
@@ -149,11 +147,14 @@
     </section>
   </main>
 
+  <article class="resume" id="resume" lang="en" dir="ltr" aria-label="One-page English CV"></article>
+
   <footer class="site-footer wrap">
     <span>© <span id="year"></span> Hossein Samadi</span>
     <span data-i18n="footer.line">Software engineering · full-stack background · backend focus</span>
   </footer>
 
+  <script src="./showcases.js" defer></script>
   <script src="./app.js" defer></script>
 </body>
 </html>
