@@ -191,7 +191,7 @@ const content = {
         ]
       },
       {
-        "title": "CRM Agent Orchestration",
+        "title": "Ai Agents Orchestration",
         "body": "Architecture work for adding multi-agent orchestration to an existing backend, including task state, handoffs, graph-style execution and documentation boundaries.",
         "tags": [
           "Backend architecture",
@@ -564,7 +564,7 @@ const content = {
         ]
       },
       {
-        "title": "CRM Agent Orchestration",
+        "title": "Ai Agents Orchestration",
         "body": "طراحی معماری برای اضافه کردن orchestration چندعاملی به بک‌اند موجود، شامل state، handoff، اجرای graph-based و مرزبندی مستندات.",
         "tags": [
           "Backend architecture",
