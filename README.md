@@ -10,9 +10,9 @@ Minimal bilingual portfolio for Hossein Samadi.
 - University portfolio
 - Technical app showcases with Telegram and web links
 - Separate professional experience (Greenbank, NOBKA and employer products),
-  seven freelance client websites, and personal projects (Telegram Order Shop,
-  GreenProof, Ollama GUI and PQC JWT Starter), in both languages
-- Backend authentication and authorization patterns
+  seven freelance client websites, and independent apps (Successo, UnknownShop,
+  GreenProof and PQC JWT Starter), in both languages
+- Authentication, authorisation and NoSQL experience within Working Stack
 - Current/private work: CRM, authentication/authorization, Kiosk Builder, Successo and CRM orchestration
 - Public repositories loaded from both `hosseinsam` and `aseknown`
 - Dedicated one-page A4 English CV when printing, including from Persian mode
@@ -38,9 +38,8 @@ All nine original client and employer website previews are restored in
 `assets/previews/`. Cards link to the websites, load screenshots lazily and
 retry the original public image URL if a local image fails to load.
 `assets/project-marks.svg` provides custom project icons; these are visual
-identifiers, not official third-party logos. Personal apps have
-local SVG illustrations in `assets/illustrations/`, labelled as illustrations
-to distinguish them from real website screenshots.
+identifiers, not official third-party logos. Independent apps use supplied or
+captured local preview images. The header uses the original H/S portfolio logo.
 
 Employment dates use June 2026 for the transition based on the September 2026
 update that it happened three months earlier. The existing 2021 NOBKA start and

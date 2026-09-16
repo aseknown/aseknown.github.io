@@ -17,12 +17,12 @@
 <body>
   <header class="site-header">
     <div class="wrap nav-row">
-      <a class="name-link" href="#top">Hossein Samadi</a>
-      <nav class="main-nav" aria-label="Primary navigation">
+      <a class="name-link" href="#top" aria-label="Hossein Samadi — home"><img src="./assets/brand/hslogo-cropped.png" alt="Hossein Samadi" width="143" height="40" /></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span><span class="sr-only">Menu</span></button>
+      <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
         <a href="#about" data-i18n="nav.about">About</a>
         <a href="#experience" data-i18n="nav.experience">Professional experience</a>
         <a href="#freelance" data-i18n="nav.freelance">Freelance projects</a>
-        <a href="#personal" data-i18n="nav.personal">Personal projects</a>
         <a href="#showcases" data-i18n="nav.showcases">Showcases</a>
         <a href="#skills" data-i18n="nav.skills">Skills</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
@@ -36,9 +36,9 @@
 
   <main id="top">
     <section class="intro wrap">
-      <p class="kicker" data-i18n="hero.role">Software Engineer — Backend (Python/Django)</p>
-      <h1 data-i18n="hero.title">Backend systems. Built around real operations.</h1>
-      <p class="intro-copy" data-i18n="hero.summary">I build modular backend systems at Greenbank for customer service, workforce management and business reporting. My work brings together Python/Django APIs, multi-tenant architecture, SSO and policy-based authorisation, backed by automated tests. Earlier experience spans React/TypeScript interfaces, C# desktop applications and device integration.</p>
+      <p class="kicker" data-i18n="hero.role">Software Engineer · Backend · Full-stack · AI-assisted engineering</p>
+      <h1 data-i18n="hero.title">I build adaptable software across systems and stacks.</h1>
+      <p class="intro-copy" data-i18n="hero.summary">Software engineer with five years of product engineering experience across Python/Django backends, React/TypeScript interfaces, desktop and device software, data systems, security, and AI-assisted engineering. I move between architecture and implementation to build reliable products around real operational needs.</p>
       <div class="intro-links">
         <a href="mailto:hosseinsamadi22@gmail.com">hosseinsamadi22@gmail.com</a>
         <a href="https://github.com/aseknown" target="_blank" rel="noreferrer">github.com/aseknown</a>
@@ -99,35 +99,12 @@
     </div>
     </section>
 
-    <section class="section wrap" id="authorization">
-      <div class="section-title split-title">
-        <div>
-          <p data-i18n="sections.auth.label">Backend security</p>
-          <h2 data-i18n="sections.auth.title">Authentication and authorization</h2>
-        </div>
-        <p class="section-note" data-i18n="sections.auth.note">I keep identity verification separate from access decisions, then apply the authorization model that best fits the domain.</p>
-      </div>
-      <div class="auth-grid" id="authGrid"></div>
-    </section>
-
     <section class="section wrap" id="skills">
       <div class="section-title">
         <p data-i18n="sections.skills.label">Skills</p>
         <h2 data-i18n="sections.skills.title">Working stack</h2>
       </div>
       <div class="skills-grid" id="skillsGrid"></div>
-    </section>
-
-    <section class="section wrap" id="github">
-      <div class="section-title split-title">
-        <div>
-          <p data-i18n="sections.github.label">Public work</p>
-          <h2 data-i18n="sections.github.title">GitHub repositories</h2>
-        </div>
-        <p class="section-note" data-i18n="sections.github.note">This section loads public repositories from both GitHub accounts. If GitHub is unavailable, a verified fallback list is shown.</p>
-      </div>
-      <div class="repo-list" id="repoList"></div>
-      <p class="repo-status" id="repoStatus" aria-live="polite"></p>
     </section>
 
     <section class="section contact-section wrap" id="contact">

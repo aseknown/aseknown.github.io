@@ -40,9 +40,16 @@ img { display: block; max-width: 100%; }
   align-items: center;
   gap: 24px;
 }
-.name-link { font-weight: 700; letter-spacing: -0.02em; white-space: nowrap; }
+.name-link { display: block; width: 143px; overflow: hidden; }
+.name-link img { width: 143px; height: 40px; object-fit: cover; }
 .main-nav { display: flex; gap: 20px; font-size: 0.86rem; color: var(--muted); }
+.main-nav a { position: relative; padding-block: 8px; }
+.main-nav a::after { content: ""; position: absolute; inset-inline: 0; bottom: 2px; height: 1px; background: var(--text); transform: scaleX(0); transition: transform 180ms ease; }
+.main-nav a:hover::after { transform: scaleX(1); }
 .main-nav a:hover, .intro-links a:hover, .contact-grid a:hover strong { color: var(--text); }
+.menu-toggle { display: none; width: 42px; height: 38px; padding: 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); cursor: pointer; }
+.menu-toggle > span:not(.sr-only) { display: block; height: 1px; background: currentColor; margin: 5px 0; transition: transform 220ms ease, opacity 160ms ease; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .header-actions { justify-self: end; display: flex; align-items: center; gap: 8px; }
 .text-button, .lang-button {
   border: 1px solid var(--line);
@@ -175,7 +182,7 @@ img { display: block; max-width: 100%; }
 .auth-item h3 { margin: 0 0 11px; font-size: 0.98rem; }
 .auth-item p { margin: 0; color: #50504b; line-height: 1.65; font-size: 0.9rem; }
 
-.skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.skills-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
 .skill-group { background: var(--surface); padding: 23px; min-height: 180px; }
 .skill-group h3 { margin: 0 0 15px; font-size: 0.9rem; }
 .skill-group p { margin: 0; color: #50504b; line-height: 1.78; font-size: 0.88rem; }
@@ -263,13 +270,52 @@ section[id] { scroll-margin-top: 110px; }
   .main-nav a { white-space: nowrap; }
   .header-actions { grid-column: 2; grid-row: 1; }
 }
+@media (max-width: 1050px) {
+  .nav-wrap, .nav-row { position: relative; }
+  .nav-row { grid-template-columns: 1fr auto auto; padding-block: 10px; }
+  .menu-toggle { display: block; grid-column: 2; }
+  .header-actions { grid-column: 3; }
+  .main-nav {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    width: 100%;
+    gap: 0;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    padding: 0 12px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background: var(--surface);
+    transform: translateY(-8px);
+    transition: max-height 300ms ease, opacity 180ms ease, transform 220ms ease, padding 220ms ease, border-color 220ms ease;
+  }
+  .main-nav.is-open { max-height: 420px; opacity: 1; visibility: visible; padding: 10px 12px; border-color: var(--line); transform: translateY(0); }
+  .main-nav a { padding: 11px 7px; border-bottom: 1px solid var(--line); transform: translateY(-4px); opacity: 0; transition: transform 180ms ease, opacity 180ms ease, color 160ms ease; }
+  .main-nav a:last-child { border-bottom: 0; }
+  .main-nav.is-open a { transform: translateY(0); opacity: 1; }
+  .main-nav.is-open a:nth-child(2) { transition-delay: 35ms; }
+  .main-nav.is-open a:nth-child(3) { transition-delay: 70ms; }
+  .main-nav.is-open a:nth-child(4) { transition-delay: 105ms; }
+  .main-nav.is-open a:nth-child(5) { transition-delay: 140ms; }
+  .main-nav.is-open a:nth-child(6) { transition-delay: 175ms; }
+  .menu-toggle[aria-expanded="true"] > span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+  .menu-toggle[aria-expanded="true"] > span:nth-child(2) { opacity: 0; }
+  .menu-toggle[aria-expanded="true"] > span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+}
 @media (max-width: 620px) {
   .text-button { display: inline-block; font-size: .7rem; padding: 0 6px; }
-  .name-link { font-size: .9rem; }
+  .name-link { width: 108px; }
+  .name-link img { width: 108px; height: 30px; }
   .showcase-grid { grid-template-columns: 1fr; }
   .showcase-visual { min-height: 260px; }
+  .intro h1 { overflow-wrap: anywhere; }
+  .text-button { width: 42px; font-size: 0; }
+  .text-button::after { content: "CV"; font-size: .72rem; }
 }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .preview-image img, .showcase-card { transition: none; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .preview-image img, .showcase-card, .main-nav, .main-nav a, .menu-toggle span { transition: none; } }
 @page { size: A4 portrait; margin: 13mm 15mm; }
 @media print {
   html, html[dir="rtl"] { direction: ltr; }

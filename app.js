@@ -14,9 +14,9 @@ const content = {
       "live": "Live preview"
     },
     "hero": {
-      "role": "Software Engineer — Backend (Python/Django)",
-      "title": "Backend systems. Built around real operations.",
-      "summary": "I build modular backend systems at Greenbank for customer service, workforce management and business reporting. My work brings together Python/Django APIs, multi-tenant architecture, SSO and policy-based authorisation, backed by automated tests. Earlier experience spans React/TypeScript interfaces, C# desktop applications and device integration."
+      "role": "Software Engineer · Backend · Full-stack · AI-assisted engineering",
+      "title": "I build adaptable software across systems and stacks.",
+      "summary": "Software engineer with five years of product engineering experience across Python/Django backends, React/TypeScript interfaces, desktop and device software, data systems, security, and AI-assisted engineering. I move between architecture and implementation to build reliable products around real operational needs."
     },
     "sections": {
       "about": {
@@ -38,19 +38,9 @@ const content = {
         "title": "University portfolio",
         "note": "Projects completed during university, covering mobile development, computer vision, machine learning and full-stack web systems."
       },
-      "auth": {
-        "label": "Backend security",
-        "title": "Authentication and authorization",
-        "note": "I keep identity verification separate from access decisions, then apply the authorization model that best fits the domain."
-      },
       "skills": {
         "label": "Skills",
         "title": "Working stack"
-      },
-      "github": {
-        "label": "Public work",
-        "title": "GitHub repositories",
-        "note": "This section loads public repositories from both GitHub accounts. If GitHub is unavailable, a verified fallback list is shown."
       },
       "contact": {
         "label": "Contact",
@@ -70,7 +60,7 @@ const content = {
     "profile": [
       {
         "title": "Current focus",
-        "body": "I build modular backend systems at Greenbank for customer service, workforce management and business reporting. My work brings together Python/Django APIs, multi-tenant architecture, SSO and policy-based authorisation, backed by automated tests. Earlier experience spans React/TypeScript interfaces, C# desktop applications and device integration."
+        "body": "Backend engineering across APIs, multi-tenant systems, identity, reporting and operational workflows."
       },
       {
         "title": "Engineering range",
@@ -201,16 +191,6 @@ const content = {
         ]
       },
       {
-        "title": "Successo",
-        "body": "Backend/API and production deployment work for Successo services, including Linux-side service troubleshooting and API documentation availability.",
-        "tags": [
-          "REST API",
-          "Linux",
-          "Deployment",
-          "Operations"
-        ]
-      },
-      {
         "title": "CRM Agent Orchestration",
         "body": "Architecture work for adding multi-agent orchestration to an existing backend, including task state, handoffs, graph-style execution and documentation boundaries.",
         "tags": [
@@ -239,32 +219,6 @@ const content = {
         "body": "Buying and selling application built around an auction core using the MERN stack."
       }
     ],
-    "auth": [
-      {
-        "title": "Authentication boundary",
-        "body": "Identity, session or token validation is kept separate from authorization decisions so each layer can be tested and changed independently."
-      },
-      {
-        "title": "RBAC",
-        "body": "Permissions are grouped by organizational role when job responsibilities provide a stable access boundary."
-      },
-      {
-        "title": "ABAC / policy rules",
-        "body": "User, tenant, resource, request and domain attributes can be evaluated when role-only rules are not expressive enough."
-      },
-      {
-        "title": "Object-level authorization",
-        "body": "Permission checks can be evaluated on the specific record or resource, not only at route level. This is important for ownership and tenant isolation."
-      },
-      {
-        "title": "ACL / ReBAC",
-        "body": "Direct grants or relationship-based rules are useful when access depends on links between a user, team, organization and resource."
-      },
-      {
-        "title": "Security principles",
-        "body": "Least privilege, deny by default, explicit permission checks, centralized policy logic, predictable failures and auditable access decisions."
-      }
-    ],
     "skills": [
       {
         "title": "Backend",
@@ -272,7 +226,11 @@ const content = {
       },
       {
         "title": "Data",
-        "body": "PostgreSQL, relational modeling, SQL/query design, indexes, reporting and performance-oriented data work."
+        "body": "PostgreSQL, SQL, relational modelling, indexes, reporting, NoSQL, document stores and key-value data models."
+      },
+      {
+        "title": "Backend security",
+        "body": "Authentication and authorisation, SSO, RBAC, policy and attribute rules, object-level permissions, least privilege and deny-by-default design."
       },
       {
         "title": "Frontend",
@@ -289,6 +247,10 @@ const content = {
       {
         "title": "Delivery",
         "body": "Docker, Linux, Git, GitHub Actions, GitLab CI/CD, deployment troubleshooting and technical documentation."
+      },
+      {
+        "title": "AI & agent engineering",
+        "body": "LLM applications, agent orchestration, multi-agent task handoffs, BMAD Method workflows, prompt engineering, context design and tool-assisted development."
       }
     ],
     "contact": {
@@ -297,12 +259,6 @@ const content = {
     },
     "footer": {
       "line": "Software engineering · full-stack background · backend focus"
-    },
-    "repo": {
-      "fallback": "Public GitHub repository.",
-      "statusLive": "Public repositories loaded from GitHub.",
-      "statusFallback": "GitHub API is unavailable; showing the local fallback list.",
-      "fork": "Fork"
     },
     "freelance": [
       {
@@ -357,6 +313,28 @@ const content = {
     ],
     "personal": [
       {
+        "title": "Successo",
+        "body": "Motivation and personal-growth platform delivered as an independent web application.",
+        "tags": [
+          "Web application",
+          "Product delivery"
+        ],
+        "url": "https://successomag.ir/",
+        "image": "./assets/illustrations/successo.png"
+      },
+      {
+        "title": "UnknownShop — Telegram Marketplace",
+        "body": "Independent marketplace for discovering shops and products, with a Telegram Mini App, API and D1-backed order workflow.",
+        "tags": [
+          "Telegram Mini App",
+          "API",
+          "Cloudflare D1"
+        ],
+        "url": "https://telegram-order-shop.pages.dev/",
+        "image": "./assets/illustrations/telegram-marketplace.png",
+        "secondaryUrl": "https://t.me/aseknownbot?start=_tgr_oEYKXkEyZmNk"
+      },
+      {
         "title": "GreenProof",
         "body": "Environmental-impact marketplace project using Next.js, NestJS, PostgreSQL, Prisma and Docker.",
         "tags": [
@@ -365,17 +343,8 @@ const content = {
           "PostgreSQL",
           "Prisma"
         ],
-        "url": "https://github.com/hosseinsam/greenProof"
-      },
-      {
-        "title": "Ollama GUI",
-        "body": "Web interface for interacting with locally running Ollama and language models.",
-        "tags": [
-          "TypeScript",
-          "LLM",
-          "Ollama"
-        ],
-        "url": "https://github.com/hosseinsam/ollama-gui"
+        "url": "https://github.com/hosseinsam/greenProof",
+        "image": "./assets/illustrations/greenproof.png"
       },
       {
         "title": "PQC JWT Starter",
@@ -418,9 +387,9 @@ const content = {
       "live": "مشاهده سایت"
     },
     "hero": {
-      "role": "مهندس نرم‌افزار — بک‌اند (Python/Django)",
-      "title": "سیستم‌های بک‌اند برای عملیات واقعی.",
-      "summary": "در Greenbank بک‌اند ماژولار برای خدمات مشتری، مدیریت نیروی کار و گزارش‌های کسب‌وکار توسعه می‌دهم. تمرکز من APIهای Python/Django، معماری چندسازمانی، SSO، مجوزدهی مبتنی بر policy و تست خودکار است. تجربه قبلی من شامل React/TypeScript، برنامه‌های دسکتاپ C# و ارتباط با دستگاه‌هاست."
+      "role": "مهندس نرم‌افزار · بک‌اند · فول‌استک · مهندسی با کمک هوش مصنوعی",
+      "title": "نرم‌افزار منعطف، از سیستم تا محصول.",
+      "summary": "مهندس نرم‌افزار با پنج سال تجربه مهندسی محصول در بک‌اند Python/Django، رابط‌های React/TypeScript، نرم‌افزار دسکتاپ و دستگاه، سیستم‌های داده، امنیت و مهندسی با کمک هوش مصنوعی. بین معماری و پیاده‌سازی حرکت می‌کنم تا برای نیازهای عملیاتی واقعی محصول قابل اتکا بسازم."
     },
     "sections": {
       "about": {
@@ -442,19 +411,9 @@ const content = {
         "title": "پروژه‌های دانشگاه",
         "note": "پروژه‌های دوره دانشگاه در حوزه موبایل، بینایی ماشین، یادگیری ماشین و سیستم‌های وب فول‌استک."
       },
-      "auth": {
-        "label": "امنیت بک‌اند",
-        "title": "احراز هویت و مجوزدهی",
-        "note": "تأیید هویت را از تصمیم دسترسی جدا نگه می‌دارم و بعد متناسب با دامنه از مدل مجوزدهی مناسب استفاده می‌کنم."
-      },
       "skills": {
         "label": "مهارت‌ها",
         "title": "فناوری‌های کاری"
-      },
-      "github": {
-        "label": "کارهای عمومی",
-        "title": "مخازن GitHub",
-        "note": "این بخش مخازن عمومی را از هر دو حساب GitHub بارگذاری می‌کند. در صورت در دسترس نبودن GitHub، فهرست محلی نمایش داده می‌شود."
       },
       "contact": {
         "label": "ارتباط",
@@ -474,7 +433,7 @@ const content = {
     "profile": [
       {
         "title": "تمرکز فعلی",
-        "body": "در Greenbank بک‌اند ماژولار برای خدمات مشتری، مدیریت نیروی کار و گزارش‌های کسب‌وکار توسعه می‌دهم. تمرکز من APIهای Python/Django، معماری چندسازمانی، SSO، مجوزدهی مبتنی بر policy و تست خودکار است. تجربه قبلی من شامل React/TypeScript، برنامه‌های دسکتاپ C# و ارتباط با دستگاه‌هاست."
+        "body": "مهندسی بک‌اند در APIها، سیستم‌های چندسازمانی، هویت، گزارش‌دهی و گردش‌کارهای عملیاتی."
       },
       {
         "title": "دامنه تجربه",
@@ -605,16 +564,6 @@ const content = {
         ]
       },
       {
-        "title": "Successo",
-        "body": "کار روی بک‌اند/API و استقرار سرویس‌های Successo، شامل عیب‌یابی سرویس در Linux و دسترسی صحیح مستندات API در محیط تولید.",
-        "tags": [
-          "REST API",
-          "Linux",
-          "Deployment",
-          "Operations"
-        ]
-      },
-      {
         "title": "CRM Agent Orchestration",
         "body": "طراحی معماری برای اضافه کردن orchestration چندعاملی به بک‌اند موجود، شامل state، handoff، اجرای graph-based و مرزبندی مستندات.",
         "tags": [
@@ -643,32 +592,6 @@ const content = {
         "body": "سیستم خرید و فروش مبتنی بر هسته مزایده با MERN stack."
       }
     ],
-    "auth": [
-      {
-        "title": "مرز Authentication",
-        "body": "اعتبارسنجی هویت، session یا token از تصمیم authorization جدا نگه داشته می‌شود تا هر لایه مستقل قابل تست و تغییر باشد."
-      },
-      {
-        "title": "RBAC",
-        "body": "وقتی مسئولیت‌های شغلی مرز دسترسی پایداری ایجاد می‌کنند، permissionها بر اساس role سازمانی گروه‌بندی می‌شوند."
-      },
-      {
-        "title": "ABAC / Policy",
-        "body": "وقتی role کافی نیست، attributeهای کاربر، tenant، resource، request و context دامنه در تصمیم دسترسی استفاده می‌شوند."
-      },
-      {
-        "title": "Object-level authorization",
-        "body": "دسترسی می‌تواند روی رکورد یا resource مشخص بررسی شود، نه فقط روی route. این موضوع برای ownership و tenant isolation مهم است."
-      },
-      {
-        "title": "ACL / ReBAC",
-        "body": "وقتی دسترسی به grant مستقیم یا رابطه بین کاربر، تیم، سازمان و resource وابسته است، ACL یا مدل relationship-based کاربرد دارد."
-      },
-      {
-        "title": "اصول امنیتی",
-        "body": "Least privilege، deny by default، permission check صریح، policy logic متمرکز، failure قابل پیش‌بینی و access decision قابل audit."
-      }
-    ],
     "skills": [
       {
         "title": "Backend",
@@ -676,7 +599,11 @@ const content = {
       },
       {
         "title": "Data",
-        "body": "PostgreSQL، relational modeling، SQL/query design، index، reporting و کار داده‌ای با تمرکز بر performance."
+        "body": "PostgreSQL، SQL، مدل‌سازی رابطه‌ای، index، گزارش‌گیری، NoSQL، document store و مدل‌های key-value."
+      },
+      {
+        "title": "امنیت بک‌اند",
+        "body": "Authentication و authorization، SSO، RBAC، قوانین policy و attribute، مجوز سطح object، least privilege و deny by default."
       },
       {
         "title": "Frontend",
@@ -693,6 +620,10 @@ const content = {
       {
         "title": "Delivery",
         "body": "Docker، Linux، Git، GitHub Actions، GitLab CI/CD، عیب‌یابی استقرار و مستندات فنی."
+      },
+      {
+        "title": "هوش مصنوعی و مهندسی Agent",
+        "body": "اپلیکیشن‌های LLM، هماهنگ‌سازی agentها، تحویل کار بین چند agent، گردش‌کار BMAD Method، مهندسی prompt، طراحی context و توسعه با ابزارهای هوشمند."
       }
     ],
     "contact": {
@@ -701,12 +632,6 @@ const content = {
     },
     "footer": {
       "line": "مهندسی نرم‌افزار · تجربه فول‌استک · تمرکز بک‌اند"
-    },
-    "repo": {
-      "fallback": "مخزن عمومی GitHub.",
-      "statusLive": "مخازن عمومی از GitHub بارگذاری شدند.",
-      "statusFallback": "API گیت‌هاب در دسترس نیست؛ فهرست محلی نمایش داده می‌شود.",
-      "fork": "Fork"
     },
     "freelance": [
       {
@@ -761,6 +686,28 @@ const content = {
     ],
     "personal": [
       {
+        "title": "Successo",
+        "body": "پلتفرم انگیزشی و رشد فردی که به‌عنوان یک اپلیکیشن وب مستقل توسعه داده شده است.",
+        "tags": [
+          "Web application",
+          "Product delivery"
+        ],
+        "url": "https://successomag.ir/",
+        "image": "./assets/illustrations/successo.png"
+      },
+      {
+        "title": "UnknownShop — Telegram Marketplace",
+        "body": "مارکت‌پلیس مستقل برای کشف فروشگاه‌ها و محصولات، همراه با Telegram Mini App، API و گردش‌کار سفارش مبتنی بر D1.",
+        "tags": [
+          "Telegram Mini App",
+          "API",
+          "Cloudflare D1"
+        ],
+        "url": "https://telegram-order-shop.pages.dev/",
+        "image": "./assets/illustrations/telegram-marketplace.png",
+        "secondaryUrl": "https://t.me/aseknownbot?start=_tgr_oEYKXkEyZmNk"
+      },
+      {
         "title": "GreenProof",
         "body": "پروژه بازار اثرات محیط‌زیستی با Next.js، NestJS، PostgreSQL، Prisma و Docker.",
         "tags": [
@@ -769,17 +716,8 @@ const content = {
           "PostgreSQL",
           "Prisma"
         ],
-        "url": "https://github.com/hosseinsam/greenProof"
-      },
-      {
-        "title": "Ollama GUI",
-        "body": "رابط وب برای تعامل با Ollama و مدل‌های زبانی اجراشده به‌صورت محلی.",
-        "tags": [
-          "TypeScript",
-          "LLM",
-          "Ollama"
-        ],
-        "url": "https://github.com/hosseinsam/ollama-gui"
+        "url": "https://github.com/hosseinsam/greenProof",
+        "image": "./assets/illustrations/greenproof.png"
       },
       {
         "title": "PQC JWT Starter",
@@ -809,94 +747,8 @@ const content = {
   }
 };
 
-const fallbackRepos = [
-  {
-    name: "greenProof",
-    owner: "hosseinsam",
-    html_url: "https://github.com/hosseinsam/greenProof",
-    description: "Verified environmental-impact marketplace with Next.js, NestJS, PostgreSQL, Prisma and Docker.",
-    language: "TypeScript",
-    stargazers_count: 0,
-    fork: false,
-    archived: false
-  },
-  {
-    name: "ollama-gui",
-    owner: "hosseinsam",
-    html_url: "https://github.com/hosseinsam/ollama-gui",
-    description: "Web interface for interacting with locally running Ollama and LLM models.",
-    language: "TypeScript",
-    stargazers_count: 1,
-    fork: false,
-    archived: false
-  },
-  {
-    name: "pqc-jwt-starter",
-    owner: "hosseinsam",
-    html_url: "https://github.com/hosseinsam/pqc-jwt-starter",
-    description: "JWT authentication starter exploring post-quantum cryptography concepts.",
-    language: "TypeScript",
-    stargazers_count: 1,
-    fork: false,
-    archived: false
-  },
-  {
-    name: "pawgatoFrontWithDarkmode",
-    owner: "hosseinsam",
-    html_url: "https://github.com/hosseinsam/pawgatoFrontWithDarkmode",
-    description: "Frontend project with dark-mode support.",
-    language: "TypeScript",
-    stargazers_count: 0,
-    fork: false,
-    archived: false
-  },
-  {
-    name: "Computer-Vision-color-spaces",
-    owner: "hosseinsam",
-    html_url: "https://github.com/hosseinsam/Computer-Vision-color-spaces",
-    description: "Computer-vision experiments for image processing and color-space analysis.",
-    language: "Python",
-    stargazers_count: 0,
-    fork: false,
-    archived: false
-  },
-  {
-    name: "MachineVisionFall1400",
-    owner: "hosseinsam",
-    html_url: "https://github.com/hosseinsam/MachineVisionFall1400",
-    description: "Machine Vision course code.",
-    language: "Jupyter Notebook",
-    stargazers_count: 0,
-    fork: true,
-    archived: false
-  },
-  {
-    name: "irtunel-heavy-Equipments-market-place",
-    owner: "hosseinsam",
-    html_url: "https://github.com/hosseinsam/irtunel-heavy-Equipments-market-place",
-    description: "Full-stack heavy-equipment marketplace developed as a bachelor final project.",
-    language: "JavaScript",
-    stargazers_count: 0,
-    fork: false,
-    archived: false
-  },
-  {
-    name: "telegram-order-miniapp",
-    owner: "aseknown",
-    html_url: "https://github.com/aseknown/telegram-order-miniapp",
-    description: "Telegram Mini App and API for an order workflow.",
-    language: "JavaScript",
-    stargazers_count: 0,
-    fork: false,
-    archived: false
-  }
-];
-
 let language = localStorage.getItem("portfolio-language") || "en";
 if (!content[language]) language = "en";
-let currentRepos = fallbackRepos;
-let repoMode = "fallback";
-
 function escapeHtml(value) {
   return String(value ?? "")
     .replaceAll("&", "&amp;")
@@ -930,9 +782,7 @@ function applyLanguage() {
   renderProfessionalProjects();
   renderUniversityProjects();
   renderShowcases();
-  renderAuthorization();
   renderSkills();
-  renderRepos(currentRepos, repoMode);
   localStorage.setItem("portfolio-language", language);
 }
 
@@ -1001,15 +851,6 @@ function renderUniversityProjects() {
   `).join("");
 }
 
-function renderAuthorization() {
-  document.getElementById("authGrid").innerHTML = content[language].auth.map((item) => `
-    <article class="auth-item">
-      <h3>${escapeHtml(item.title)}</h3>
-      <p>${escapeHtml(item.body)}</p>
-    </article>
-  `).join("");
-}
-
 function renderSkills() {
   document.getElementById("skillsGrid").innerHTML = content[language].skills.map((item) => `
     <article class="skill-group">
@@ -1019,83 +860,27 @@ function renderSkills() {
   `).join("");
 }
 
-function normalizeRepo(repo) {
-  return {
-    name: repo.name,
-    owner: repo.owner?.login || repo.owner || "github",
-    html_url: repo.html_url,
-    description: repo.description,
-    language: repo.language,
-    stargazers_count: repo.stargazers_count || 0,
-    fork: Boolean(repo.fork),
-    archived: Boolean(repo.archived),
-    updated_at: repo.updated_at || ""
-  };
-}
-
-function repoKey(repo) {
-  return `${repo.owner}/${repo.name}`.toLowerCase();
-}
-
-function renderRepos(repos, mode = "fallback") {
-  const strings = content[language].repo;
-  const root = document.getElementById("repoList");
-  const status = document.getElementById("repoStatus");
-
-  root.innerHTML = repos.map((repo) => `
-    <a class="repo-row" href="${escapeAttr(repo.html_url)}" target="_blank" rel="noreferrer">
-      <h3>${escapeHtml(repo.name)}<span class="repo-owner">${escapeHtml(repo.owner)}</span></h3>
-      <p>${escapeHtml(repo.description || strings.fallback)}</p>
-      <div class="repo-meta">
-        ${repo.language ? `<span class="tag">${escapeHtml(repo.language)}</span>` : ""}
-        ${repo.fork ? `<span class="tag">${escapeHtml(strings.fork)}</span>` : ""}
-        ${repo.stargazers_count ? `<span class="tag">${repo.stargazers_count} star${repo.stargazers_count === 1 ? "" : "s"}</span>` : ""}
-      </div>
-    </a>
-  `).join("");
-
-  status.textContent = mode === "live" ? strings.statusLive : strings.statusFallback;
-}
-
-async function loadGitHubRepos() {
-  const users = ["hosseinsam", "aseknown"];
-  try {
-    const results = await Promise.all(users.map(async (user) => {
-      const response = await fetch(`https://api.github.com/users/${user}/repos?sort=updated&per_page=100`, {
-        headers: { Accept: "application/vnd.github+json" }
-      });
-      if (!response.ok) throw new Error(`GitHub ${response.status}`);
-      const data = await response.json();
-      return data.map(normalizeRepo);
-    }));
-
-    const map = new Map();
-    results.flat()
-      .filter((repo) => !repo.archived)
-      .filter((repo) => repo.name.toLowerCase() !== repo.owner.toLowerCase())
-      .forEach((repo) => map.set(repoKey(repo), repo));
-
-    const repos = [...map.values()].sort((a, b) => (b.updated_at || "").localeCompare(a.updated_at || ""));
-    if (repos.length) {
-      currentRepos = repos;
-      repoMode = "live";
-      renderRepos(currentRepos, repoMode);
-    }
-  } catch {
-    currentRepos = fallbackRepos;
-    repoMode = "fallback";
-    renderRepos(currentRepos, repoMode);
-  }
-}
-
 document.getElementById("languageButton").addEventListener("click", () => {
   language = language === "en" ? "fa" : "en";
   applyLanguage();
 });
+
+const menuToggle = document.getElementById("menuToggle");
+const mainNav = document.getElementById("mainNav");
+function closeMenu() {
+  menuToggle.setAttribute("aria-expanded", "false");
+  mainNav.classList.remove("is-open");
+}
+menuToggle.addEventListener("click", () => {
+  const open = menuToggle.getAttribute("aria-expanded") !== "true";
+  menuToggle.setAttribute("aria-expanded", String(open));
+  mainNav.classList.toggle("is-open", open);
+});
+mainNav.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+document.addEventListener("keydown", (event) => { if (event.key === "Escape") closeMenu(); });
 
 document.getElementById("printButton").addEventListener("click", () => window.print());
 document.getElementById("year").textContent = new Date().getFullYear();
 
 renderResume();
 applyLanguage();
-loadGitHubRepos();
