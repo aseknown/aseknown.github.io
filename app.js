@@ -275,34 +275,34 @@ const content = {
         "body": "Client website project from my freelance portfolio.",
         "code": null
       },
-      {
-        "title": "Car audio system store",
-        "url": "https://k1system.ir/",
-        "image": "./assets/previews/k1-f0aee7dd.png",
-        "body": "Client website project from my freelance portfolio.",
-        "code": null
-      },
-      {
-        "title": "Sallivan Store",
-        "url": "https://sallivanstore.ir/",
-        "image": "./assets/previews/sali-8b198acb.png",
-        "body": "Client website project from my freelance portfolio.",
-        "code": null
-      },
-      {
-        "title": "ShineMakeup Store",
-        "url": "https://shinemakeup.ir/",
-        "image": "./assets/previews/shine-74e4265e.png",
-        "body": "Client website project from my freelance portfolio.",
-        "code": null
-      },
-      {
-        "title": "BamiPet Store",
-        "url": "https://bamipet.com/",
-        "image": "./assets/previews/bami-37bf4a2e.png",
-        "body": "Client website project from my freelance portfolio.",
-        "code": null
-      },
+      // {
+      //   "title": "Car audio system store",
+      //   "url": "https://k1system.ir/",
+      //   "image": "./assets/previews/k1-f0aee7dd.png",
+      //   "body": "Client website project from my freelance portfolio.",
+      //   "code": null
+      // },
+      // {
+      //   "title": "Sallivan Store",
+      //   "url": "https://sallivanstore.ir/",
+      //   "image": "./assets/previews/sali-8b198acb.png",
+      //   "body": "Client website project from my freelance portfolio.",
+      //   "code": null
+      // },
+      // {
+      //   "title": "ShineMakeup Store",
+      //   "url": "https://shinemakeup.ir/",
+      //   "image": "./assets/previews/shine-74e4265e.png",
+      //   "body": "Client website project from my freelance portfolio.",
+      //   "code": null
+      // },
+      // {
+      //   "title": "BamiPet Store",
+      //   "url": "https://bamipet.com/",
+      //   "image": "./assets/previews/bami-37bf4a2e.png",
+      //   "body": "Client website project from my freelance portfolio.",
+      //   "code": null
+      // },
       {
         "title": "Pawgato",
         "url": "https://pawgato.com/",
@@ -312,16 +312,7 @@ const content = {
       }
     ],
     "personal": [
-      {
-        "title": "Successo",
-        "body": "Motivation and personal-growth platform delivered as an independent web application.",
-        "tags": [
-          "Web application",
-          "Product delivery"
-        ],
-        "url": "https://successomag.ir/",
-        "image": "./assets/illustrations/successo.png"
-      },
+      
       {
         "title": "UnknownShop — Telegram Marketplace",
         "body": "Independent marketplace for discovering shops and products, with a Telegram Mini App, API and D1-backed order workflow.",
@@ -355,6 +346,15 @@ const content = {
           "Cryptography"
         ],
         "url": "https://github.com/hosseinsam/pqc-jwt-starter"
+      },{
+        "title": "Successo",
+        "body": "Motivation and personal-growth platform delivered as an independent web application.",
+        "tags": [
+          "Web application",
+          "Product delivery"
+        ],
+        "url": "https://successomag.ir/",
+        "image": "./assets/illustrations/successo.png"
       }
     ],
     "employerProducts": [
