@@ -14,15 +14,19 @@ const content = {
       "live": "Live preview"
     },
     "hero": {
-      "role": "Software Engineer · Backend · Full-stack · AI-assisted engineering",
-      "title": "I build adaptable software across systems and stacks.",
-      "summary": "Software engineer with five years of product engineering experience across Python/Django backends, React/TypeScript interfaces, desktop and device software, data systems, security, and AI-assisted engineering. I move between architecture and implementation to build reliable products around real operational needs."
+      "role": "Backend Engineer · Django · PostgreSQL · API Security",
+      "title": "Backend engineer building secure, auditable systems.",
+      "summary": "Five years shipping Django and PostgreSQL products with strict access control, explicit transactions and tests for failure paths. I turn messy business rules into reliable software, from API design to production.",
+      "caseStudy": "View GreenProof case study",
+      "resume": "Download résumé",
+      "email": "Email me",
+      "availability": "Open to senior backend roles — remote or Iran. Working hours: Iran Standard Time (UTC+3:30)."
     },
     "sections": {
       "about": {
         "label": "Profile",
         "title": "Secure boundaries. Maintainable systems.",
-        "note": "I connect API design, data isolation and access control to the operational needs of the product, with explicit transactions and tests for failure paths."
+        "note": "I connect API design, data isolation and access control to what the product actually needs to do. I use explicit database transactions, clear permission rules and automated tests that cover failure paths, not only the happy path. I have worked across Python/Django backends, React/TypeScript interfaces, desktop and device software, and data systems, which helps me design backends that frontend and operations teams can rely on."
       },
       "experience": {
         "label": "Experience",
@@ -44,7 +48,8 @@ const content = {
       },
       "contact": {
         "label": "Contact",
-        "title": "Links"
+        "title": "Let's talk",
+        "note": "I'm open to senior backend roles and selected contract work. The fastest way to reach me is email."
       },
       "showcases": {
         "label": "Personal projects",
@@ -60,7 +65,7 @@ const content = {
     "profile": [
       {
         "title": "Current focus",
-        "body": "Backend engineering across APIs, multi-tenant systems, identity, reporting and operational workflows."
+        "body": "Secure API design, authorization, data isolation and tests that cover failure paths."
       },
       {
         "title": "Engineering range",
@@ -76,21 +81,22 @@ const content = {
         "company": "Greenbank",
         "role": "Software Engineer — Backend (Python/Django)",
         "date": "Jun 2026 — Present",
-        "summary": "Developed a modular CRM backend supporting customer service operations, workforce management and business reporting.",
+        "summary": "Modular CRM for customer service, workforce management and business reporting. I own the API, tenant isolation and authorization.",
         "bullets": [
-          "Built REST APIs with Python, Django and Django REST Framework, following CQRS patterns and explicit transaction boundaries.",
-          "Implemented tenant isolation, onboarding and membership management to protect organisation-specific data.",
-          "Integrated SSO and centralised role- and policy-based authorisation across APIs and command handlers.",
-          "Developed private attachment uploads and authenticated downloads with file validation and resource-level permissions.",
-          "Delivered support metrics, SLA reporting and activity exports; optimised export processing for large date ranges.",
-          "Extended plugin-based workflows and added automated coverage for permissions, tenant isolation and failure scenarios."
-        ]
+          "Built REST APIs with Python, Django and Django REST Framework, using CQRS-style handlers and explicit database transactions so a failed step does not leave a partial write.",
+          "Implemented tenant isolation, onboarding and membership rules so each organisation can only access its own data.",
+          "Integrated SSO and centralised role- and policy-based authorization across APIs and command handlers.",
+          "Built private attachment upload and authenticated download with file validation and resource-level permissions.",
+          "Delivered support metrics, SLA reporting and activity exports, and improved export processing for large date ranges.",
+          "Added automated tests for permissions, tenant isolation and failure paths."
+        ],
+        "stack": "Python, Django, Django REST Framework, PostgreSQL"
       },
       {
         "company": "NOBKA",
         "role": "Software Engineer",
         "date": "2021 — Jun 2026",
-        "summary": "Developed web interfaces, desktop software and device integrations for electronic and software products.",
+        "summary": "Web interfaces, desktop software and device integrations for electronic products. Scope included administration UIs, a messenger extension and encrypted device communication.",
         "projects": [
           {
             "title": "VOIP System",
@@ -154,10 +160,12 @@ const content = {
           }
         ],
         "bullets": [
-          "Built React/Redux device administration interfaces with reusable components, complex forms and feature-based API integration.",
-          "Developed a TypeScript/React messenger extension using Chrome Manifest V3 and backend API validation flows.",
-          "Built a C# file manager for encrypted serial communication and byte-level file transfer."
-        ]
+          "Built React and Redux device-administration interfaces with reusable components, complex forms and feature-based API integration, so a large configuration surface stayed maintainable.",
+          "Developed a TypeScript and React messenger extension on Chrome Manifest V3, including backend validation when a user's key changes.",
+          "Built a C# file manager for encrypted serial communication and byte-level file transfer between the device and Windows.",
+          "Turned permission models and use cases into operational workflows for VoIP, LTE modem, attendance, smart-home and IoT/MQTT products."
+        ],
+        "stack": "JavaScript, TypeScript, React, Redux, C#"
       }
     ],
     "projects": [
@@ -222,43 +230,31 @@ const content = {
     "skills": [
       {
         "title": "Backend",
-        "body": "Python · Django · Django REST Framework · REST APIs · CQRS · Multi-Tenancy · SSO · RBAC · Automated Testing"
+        "body": "Python, Django, Django REST Framework, PostgreSQL, REST API design, CQRS"
       },
       {
-        "title": "Data",
-        "body": "PostgreSQL, SQL, relational modelling, indexes, reporting, NoSQL, document stores and key-value data models."
-      },
-      {
-        "title": "Backend security",
-        "body": "Authentication and authorisation, SSO, RBAC, policy and attribute rules, object-level permissions, least privilege and deny-by-default design."
+        "title": "Security",
+        "body": "Authentication, authorization (RBAC), SSO, policy and object-level permissions, data isolation, input validation"
       },
       {
         "title": "Frontend",
-        "body": "JavaScript, TypeScript, React, Redux, Axios, HTML and CSS. Comfortable moving into frontend work when the product requires it."
+        "body": "React, TypeScript, Redux"
       },
       {
-        "title": "Desktop / device integration",
-        "body": "C#, serial-port communication, byte-level file transfer, encrypted device workflows and collaboration around VHDL command design."
-      },
-      {
-        "title": "Architecture & quality",
-        "body": "Modular plugins, tenant isolation, centralised authorisation, explicit transaction boundaries, resource permissions and automated failure-scenario tests."
+        "title": "Quality",
+        "body": "Automated tests for permissions, tenant isolation and failure paths; GitHub Actions; GitLab CI"
       },
       {
         "title": "Delivery",
-        "body": "Docker, Linux, Git, GitHub Actions, GitLab CI/CD, deployment troubleshooting and technical documentation."
+        "body": "Docker, Git, Linux, Cloudflare Pages and D1"
       },
       {
-        "title": "AI & agent engineering",
-        "body": "LLM applications, agent orchestration, multi-agent task handoffs, BMAD Method workflows, prompt engineering, context design and tool-assisted development."
+        "title": "Other",
+        "body": "Desktop and device software (C#), SQL and NoSQL data systems, AI-assisted engineering"
       }
     ],
-    "contact": {
-      "currentGithub": "Current GitHub",
-      "originalGithub": "Original GitHub"
-    },
     "footer": {
-      "line": "Software engineering · full-stack background · backend focus"
+      "line": "Backend engineering · Django · PostgreSQL"
     },
     "freelance": [
       {
@@ -312,7 +308,37 @@ const content = {
       }
     ],
     "personal": [
-      
+      {
+        "title": "GreenProof",
+        "featured": true,
+        "image": "./assets/illustrations/greenproof.png",
+        "caseStudy": {
+          "title": "GreenProof — verified nature-impact platform",
+          "status": "In development, pre-launch",
+          "summary": "GreenProof is a platform where community contributors submit evidence of planting and follow-up care, reviewers approve it under defined rules, and companies receive reports that show what was funded, how it was checked and what the limits are.",
+          "role": "Founder and lead engineer. I design the backend, the data model and the verification rules.",
+          "points": [
+            {
+              "title": "Evidence-first data model.",
+              "body": "Contribution type, measured quantity and quality are kept separate. A later survival check is a follow-up activity, not a second planted tree."
+            },
+            {
+              "title": "Append-only points ledger.",
+              "body": "Contribution recognition (GreenProof Points) is account-bound and non-transferable. Corrections are new entries with a reason, never silent edits."
+            },
+            {
+              "title": "Security audit of my own codebase.",
+              "body": "I reviewed authorization, payment flow and certificate integrity, and recorded the findings and remediation plan before any public launch."
+            },
+            {
+              "title": "Product and compliance decision records.",
+              "body": "I compared a service-only model, a points-only model and a token model, and chose points-only with measurable stop conditions. I prepared a counsel-review package for a pilot in Belgium and the Netherlands."
+            }
+          ],
+          "stack": "TypeScript, NestJS, PostgreSQL, Prisma, Next.js, Docker",
+          "statusNote": "Pre-launch. Not accepting payments. Pilot planning in Belgium and the Netherlands."
+        }
+      },
       {
         "title": "UnknownShop — Telegram Marketplace",
         "body": "Independent marketplace for discovering shops and products, with a Telegram Mini App, API and D1-backed order workflow.",
@@ -324,18 +350,6 @@ const content = {
         "url": "https://telegram-order-shop.pages.dev/",
         "image": "./assets/illustrations/telegram-marketplace.png",
         "secondaryUrl": "https://t.me/aseknownbot?start=_tgr_oEYKXkEyZmNk"
-      },
-      {
-        "title": "GreenProof",
-        "body": "Environmental-impact marketplace project using Next.js, NestJS, PostgreSQL, Prisma and Docker.",
-        "tags": [
-          "Next.js",
-          "NestJS",
-          "PostgreSQL",
-          "Prisma"
-        ],
-        "url": "https://github.com/hosseinsam/greenProof",
-        "image": "./assets/illustrations/greenproof.png"
       },
       {
         "title": "PQC JWT Starter",
@@ -387,15 +401,19 @@ const content = {
       "live": "مشاهده سایت"
     },
     "hero": {
-      "role": "مهندس نرم‌افزار · بک‌اند · فول‌استک · مهندسی با کمک هوش مصنوعی",
-      "title": "نرم‌افزار منعطف، از سیستم تا محصول.",
-      "summary": "مهندس نرم‌افزار با پنج سال تجربه مهندسی محصول در بک‌اند Python/Django، رابط‌های React/TypeScript، نرم‌افزار دسکتاپ و دستگاه، سیستم‌های داده، امنیت و مهندسی با کمک هوش مصنوعی. بین معماری و پیاده‌سازی حرکت می‌کنم تا برای نیازهای عملیاتی واقعی محصول قابل اتکا بسازم."
+      "role": "مهندس بک‌اند · Django · PostgreSQL · امنیت API",
+      "title": "مهندس بک‌اند برای سیستم‌های امن و قابل حسابرسی.",
+      "summary": "پنج سال ساخت محصولات Django و PostgreSQL با کنترل دسترسی سخت‌گیرانه، تراکنش‌های صریح و تست مسیرهای خطا. قواعد درهم‌ریخته کسب‌وکار را به نرم‌افزار قابل اتکا تبدیل می‌کنم، از طراحی API تا محیط تولید.",
+      "caseStudy": "مشاهده مطالعه موردی GreenProof",
+      "resume": "دانلود رزومه",
+      "email": "ایمیل به من",
+      "availability": "آماده نقش‌های ارشد بک‌اند — دورکار یا ایران. ساعت کاری: وقت ایران (UTC+3:30)."
     },
     "sections": {
       "about": {
         "label": "پروفایل",
-        "title": "مرزهای امن، سیستم‌های قابل نگهداری.",
-        "note": "طراحی API، جداسازی داده و کنترل دسترسی را به نیازهای عملیاتی محصول متصل می‌کنم؛ با تراکنش‌های صریح و تست مسیرهای خطا."
+        "title": "مرزهای امن. سیستم‌های قابل نگهداری.",
+        "note": "طراحی API، جداسازی داده و کنترل دسترسی را به کاری که محصول واقعاً باید انجام دهد وصل می‌کنم. از تراکنش‌های صریح پایگاه داده، قواعد روشن مجوز و تست‌های خودکاری استفاده می‌کنم که مسیر خطا را هم می‌پوشانند، نه فقط مسیر موفق. روی بک‌اند Python/Django، رابط React/TypeScript، نرم‌افزار دسکتاپ و دستگاه، و سیستم‌های داده کار کرده‌ام؛ این دامنه کمک می‌کند بک‌اندی طراحی کنم که تیم فرانت‌اند و عملیات بتوانند به آن تکیه کنند."
       },
       "experience": {
         "label": "تجربه",
@@ -417,7 +435,8 @@ const content = {
       },
       "contact": {
         "label": "ارتباط",
-        "title": "لینک‌ها"
+        "title": "صحبت کنیم",
+        "note": "برای نقش‌های ارشد بک‌اند و همکاری قراردادیِ انتخاب‌شده آماده‌ام. سریع‌ترین راه ارتباط، ایمیل است."
       },
       "showcases": {
         "label": "پروژه‌های شخصی",
@@ -433,7 +452,7 @@ const content = {
     "profile": [
       {
         "title": "تمرکز فعلی",
-        "body": "مهندسی بک‌اند در APIها، سیستم‌های چندسازمانی، هویت، گزارش‌دهی و گردش‌کارهای عملیاتی."
+        "body": "طراحی امن API، مجوزدهی، جداسازی داده و تست‌هایی که مسیر خطا را هم می‌پوشانند."
       },
       {
         "title": "دامنه تجربه",
@@ -449,21 +468,22 @@ const content = {
         "company": "Greenbank",
         "role": "مهندس نرم‌افزار — بک‌اند (Python/Django)",
         "date": "ژوئن ۲۰۲۶ — اکنون",
-        "summary": "توسعه بک‌اند ماژولار CRM برای عملیات خدمات مشتری، مدیریت نیروی کار و گزارش‌های کسب‌وکار.",
+        "summary": "CRM ماژولار برای خدمات مشتری، مدیریت نیروی کار و گزارش کسب‌وکار. مسئولیت API، جداسازی داده سازمان‌ها و مجوزدهی با من است.",
         "bullets": [
-          "ساخت REST API با Python، Django و Django REST Framework با الگوی CQRS و مرزهای صریح تراکنش.",
-          "پیاده‌سازی جداسازی داده‌های سازمان‌ها، راه‌اندازی tenant و مدیریت عضویت برای حفاظت از داده‌ها.",
+          "ساخت REST API با Python، Django و Django REST Framework، با handlerهای به سبک CQRS و تراکنش صریح پایگاه داده، تا شکست یک مرحله نوشتن ناقص باقی نگذارد.",
+          "پیاده‌سازی جداسازی tenant، راه‌اندازی و قواعد عضویت تا هر سازمان فقط به داده خودش دسترسی داشته باشد.",
           "یکپارچه‌سازی SSO و مجوزدهی متمرکز مبتنی بر نقش و policy در APIها و command handlerها.",
-          "توسعه آپلود خصوصی پیوست و دانلود احراز هویت‌شده با اعتبارسنجی فایل و مجوز در سطح منبع.",
-          "توسعه شاخص‌های پشتیبانی، گزارش SLA و خروجی فعالیت‌ها؛ بهینه‌سازی پردازش خروجی در بازه‌های زمانی بزرگ.",
-          "توسعه گردش‌کارهای افزونه‌ای و تست خودکار مجوزها، جداسازی tenant و سناریوهای خطا."
-        ]
+          "ساخت آپلود خصوصی پیوست و دانلود احراز هویت‌شده با اعتبارسنجی فایل و مجوز در سطح منبع.",
+          "ارائه شاخص‌های پشتیبانی، گزارش SLA و خروجی فعالیت‌ها، و بهبود پردازش خروجی برای بازه‌های زمانی بزرگ.",
+          "افزودن تست خودکار برای مجوزها، جداسازی tenant و مسیرهای خطا."
+        ],
+        "stack": "Python, Django, Django REST Framework, PostgreSQL"
       },
       {
         "company": "NOBKA",
         "role": "مهندس نرم‌افزار",
         "date": "۲۰۲۱ — ژوئن ۲۰۲۶",
-        "summary": "توسعه رابط‌های وب، نرم‌افزار دسکتاپ و ارتباط با دستگاه‌ها برای محصولات الکترونیکی و نرم‌افزاری.",
+        "summary": "رابط وب، نرم‌افزار دسکتاپ و اتصال دستگاه برای محصولات الکترونیکی. دامنه کار شامل پنل مدیریت، افزونه پیام‌رسان و ارتباط رمزنگاری‌شده با دستگاه بود.",
         "projects": [
           {
             "title": "VOIP System",
@@ -527,10 +547,12 @@ const content = {
           }
         ],
         "bullets": [
-          "ساخت پنل مدیریت دستگاه با React/Redux، کامپوننت‌های قابل استفاده مجدد، فرم‌های پیچیده و اتصال API.",
-          "توسعه افزونه پیام‌رسان با TypeScript/React و Chrome Manifest V3 و اعتبارسنجی از طریق API بک‌اند.",
-          "ساخت فایل‌منیجر C# با ارتباط سریال رمزنگاری‌شده و انتقال فایل در سطح بایت."
-        ]
+          "ساخت رابط مدیریت دستگاه با React و Redux، کامپوننت‌های قابل استفاده مجدد، فرم‌های پیچیده و اتصال API بر اساس قابلیت، تا سطح تنظیمات گسترده قابل نگهداری بماند.",
+          "توسعه افزونه پیام‌رسان با TypeScript و React روی Chrome Manifest V3، شامل اعتبارسنجی بک‌اند هنگام تغییر کلید کاربر.",
+          "ساخت فایل‌منیجر C# برای ارتباط سریال رمزنگاری‌شده و انتقال فایل در سطح بایت بین دستگاه و ویندوز.",
+          "تبدیل مدل مجوز و use case به گردش‌کار عملیاتی برای محصولات VoIP، مودم LTE، حضور و غیاب، خانه هوشمند و IoT/MQTT."
+        ],
+        "stack": "JavaScript, TypeScript, React, Redux, C#"
       }
     ],
     "projects": [
@@ -594,44 +616,32 @@ const content = {
     ],
     "skills": [
       {
-        "title": "Backend",
-        "body": "Python · Django · Django REST Framework · REST APIs · CQRS · Multi-Tenancy · SSO · RBAC · Automated Testing"
+        "title": "بک‌اند",
+        "body": "Python، Django، Django REST Framework، PostgreSQL، طراحی REST API، CQRS"
       },
       {
-        "title": "Data",
-        "body": "PostgreSQL، SQL، مدل‌سازی رابطه‌ای، index، گزارش‌گیری، NoSQL، document store و مدل‌های key-value."
+        "title": "امنیت",
+        "body": "احراز هویت، مجوزدهی (RBAC)، SSO، مجوز policy و سطح object، جداسازی داده، اعتبارسنجی ورودی"
       },
       {
-        "title": "امنیت بک‌اند",
-        "body": "Authentication و authorization، SSO، RBAC، قوانین policy و attribute، مجوز سطح object، least privilege و deny by default."
+        "title": "فرانت‌اند",
+        "body": "React، TypeScript، Redux"
       },
       {
-        "title": "Frontend",
-        "body": "JavaScript، TypeScript، React، Redux، Axios، HTML و CSS. در صورت نیاز محصول می‌توانم روی فرانت‌اند نیز کار کنم."
+        "title": "کیفیت",
+        "body": "تست خودکار مجوزها، جداسازی tenant و مسیرهای خطا؛ GitHub Actions؛ GitLab CI"
       },
       {
-        "title": "Desktop / Device",
-        "body": "C#، serial-port communication، انتقال فایل در سطح byte، جریان‌های device رمزنگاری‌شده و همکاری در طراحی commandهای VHDL."
+        "title": "تحویل",
+        "body": "Docker، Git، Linux، Cloudflare Pages و D1"
       },
       {
-        "title": "معماری و کیفیت",
-        "body": "افزونه‌های ماژولار، جداسازی tenant، مجوزدهی متمرکز، تراکنش‌های صریح، مجوز منابع و تست خودکار سناریوهای خطا."
-      },
-      {
-        "title": "Delivery",
-        "body": "Docker، Linux، Git، GitHub Actions، GitLab CI/CD، عیب‌یابی استقرار و مستندات فنی."
-      },
-      {
-        "title": "هوش مصنوعی و مهندسی Agent",
-        "body": "اپلیکیشن‌های LLM، هماهنگ‌سازی agentها، تحویل کار بین چند agent، گردش‌کار BMAD Method، مهندسی prompt، طراحی context و توسعه با ابزارهای هوشمند."
+        "title": "سایر",
+        "body": "نرم‌افزار دسکتاپ و دستگاه (C#)، سیستم‌های داده SQL و NoSQL، مهندسی با کمک هوش مصنوعی"
       }
     ],
-    "contact": {
-      "currentGithub": "GitHub فعلی",
-      "originalGithub": "GitHub قبلی"
-    },
     "footer": {
-      "line": "مهندسی نرم‌افزار · تجربه فول‌استک · تمرکز بک‌اند"
+      "line": "مهندسی بک‌اند · Django · PostgreSQL"
     },
     "freelance": [
       {
@@ -686,6 +696,37 @@ const content = {
     ],
     "personal": [
       {
+        "title": "GreenProof",
+        "featured": true,
+        "image": "./assets/illustrations/greenproof.png",
+        "caseStudy": {
+          "title": "GreenProof — پلتفرم راستی‌آزمایی اثر طبیعت",
+          "status": "در حال توسعه، پیش از انتشار",
+          "summary": "GreenProof پلتفرمی است که در آن مشارکت‌کنندگان جامعه شواهد کاشت و مراقبت بعدی را ثبت می‌کنند، بازبین‌ها آن را با قواعد مشخص تأیید می‌کنند، و شرکت‌ها گزارشی می‌گیرند که نشان می‌دهد چه چیزی تأمین مالی شده، چگونه بررسی شده و محدودیت‌ها چیست.",
+          "role": "بنیان‌گذار و مهندس اصلی. بک‌اند، مدل داده و قواعد راستی‌آزمایی را طراحی می‌کنم.",
+          "points": [
+            {
+              "title": "مدل داده مبتنی بر شواهد.",
+              "body": "نوع مشارکت، مقدار اندازه‌گیری‌شده و کیفیت جدا نگه داشته می‌شوند. بررسی بعدیِ بقا یک فعالیت پیگیری است، نه یک درخت کاشته‌شده دوم."
+            },
+            {
+              "title": "دفتر امتیاز فقط‌افزودنی.",
+              "body": "شناسایی مشارکت (امتیاز GreenProof) به حساب وابسته و غیرقابل انتقال است. اصلاح‌ها رکورد جدید با دلیل هستند، نه ویرایش بی‌صدا."
+            },
+            {
+              "title": "ممیزی امنیتی کد خودم.",
+              "body": "مجوزدهی، جریان پرداخت و یکپارچگی گواهی را بررسی کردم و یافته‌ها و برنامه اصلاح را پیش از هر انتشار عمومی ثبت کردم."
+            },
+            {
+              "title": "سوابق تصمیم محصول و انطباق.",
+              "body": "مدل فقط‌خدمت، مدل فقط‌امتیاز و مدل توکن را مقایسه کردم و فقط‌امتیاز را با شرط‌های توقف قابل اندازه‌گیری انتخاب کردم. بسته بررسی وکیل را برای پایلوت در بلژیک و هلند آماده کردم."
+            }
+          ],
+          "stack": "TypeScript, NestJS, PostgreSQL, Prisma, Next.js, Docker",
+          "statusNote": "پیش از انتشار. پرداخت قبول نمی‌شود. برنامه‌ریزی پایلوت در بلژیک و هلند."
+        }
+      },
+      {
         "title": "Successo",
         "body": "پلتفرم انگیزشی و رشد فردی که به‌عنوان یک اپلیکیشن وب مستقل توسعه داده شده است.",
         "tags": [
@@ -706,18 +747,6 @@ const content = {
         "url": "https://telegram-order-shop.pages.dev/",
         "image": "./assets/illustrations/telegram-marketplace.png",
         "secondaryUrl": "https://t.me/aseknownbot?start=_tgr_oEYKXkEyZmNk"
-      },
-      {
-        "title": "GreenProof",
-        "body": "پروژه بازار اثرات محیط‌زیستی با Next.js، NestJS، PostgreSQL، Prisma و Docker.",
-        "tags": [
-          "Next.js",
-          "NestJS",
-          "PostgreSQL",
-          "Prisma"
-        ],
-        "url": "https://github.com/hosseinsam/greenProof",
-        "image": "./assets/illustrations/greenproof.png"
       },
       {
         "title": "PQC JWT Starter",
@@ -825,6 +854,7 @@ function renderExperience() {
         <div class="experience-body">
           <p>${escapeHtml(item.summary)}</p>
           ${bullets}
+          ${item.stack ? `<p class="stack-line"><strong>${language === "en" ? "Stack" : "فناوری"}:</strong> ${escapeHtml(item.stack)}</p>` : ""}
           ${projects}
         </div>
       </article>
@@ -880,6 +910,7 @@ mainNav.querySelectorAll("a").forEach((link) => link.addEventListener("click", c
 document.addEventListener("keydown", (event) => { if (event.key === "Escape") closeMenu(); });
 
 document.getElementById("printButton").addEventListener("click", () => window.print());
+document.getElementById("downloadResume").addEventListener("click", () => window.print());
 document.getElementById("year").textContent = new Date().getFullYear();
 
 renderResume();
